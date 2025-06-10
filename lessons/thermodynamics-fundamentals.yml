@@ -1,0 +1,82 @@
+# Prerequisites
+scientific_prerequisites:
+  - "High school chemistry"
+  - "Basic algebra and graphing"
+  - "Understanding of atoms# lessons/thermodynamics-fundamentals.yml
+
+# Basic metadata
+title: "Computational Thermodynamics: Energy Landscapes and Molecular Behavior"
+description: "Explore thermodynamic principles through molecular simulations and computational analysis of energy landscapes."
+expanded_description: |
+  This lesson integrates computational methods with fundamental thermodynamic concepts to provide students 
+  with a quantitative understanding of energy, entropy, and equilibrium. Students will use Python to simulate 
+  molecular systems, calculate thermodynamic properties, and visualize energy landscapes.
+
+  Through hands-on computational exercises, students will explore how molecular-level behavior gives rise to 
+  macroscopic thermodynamic properties. The lesson emphasizes the connection between statistical mechanics 
+  and classical thermodynamics using modern computational tools.
+
+# Course information
+programming_skill: "None"
+primary_course: "Physical Chemistry"
+also_for:
+  - "Chemical Engineering Thermodynamics"
+  - "Statistical Mechanics"
+instructor: "Dr. Smith"
+estimated_time: "3 hours"
+format: "Single Jupyter Notebook"
+
+# Single notebook lesson
+notebook:
+  filename: "computational-thermodynamics.ipynb"
+  duration: "3 hours"
+
+# Learning objectives
+scientific_objectives:
+  - "Calculate thermodynamic properties from molecular simulations"
+  - "Analyze energy landscapes and relate them to reaction spontaneity"
+  - "Apply statistical mechanics principles to predict macroscopic behavior"
+  - "Evaluate equilibrium constants using computational methods"
+  - "Interpret phase transitions through molecular dynamics simulations"
+
+cyberinfrastructure_objectives:
+  - "Implement Monte Carlo simulations for thermodynamic systems"
+  - "Use Python libraries for scientific computing (NumPy, SciPy, Matplotlib)"
+  - "Visualize high-dimensional data and energy surfaces"
+  - "Process and analyze large datasets from molecular simulations"
+  - "Develop computational workflows for thermodynamic analysis"
+
+# Prerequisites
+scientific_prerequisites:
+  - "General chemistry with thermodynamics coverage"
+  - "Calculus I and II"
+  - "Basic understanding of probability and statistics"
+
+programming_prerequisites:
+  - "No prior programming experience required"
+  - "Computational thinking concepts introduced in lesson"
+
+# Platform support
+platforms:
+  - "Google Colab"
+  - "ChemCompute"
+recommended_platform: "Google Colab"
+
+# URLs and paths
+public_repo_path: "computational-thermodynamics"
+instructor_repo_path: "computational-thermodynamics-instructor"
+
+# Metadata
+tags:
+  - "thermodynamics"
+  - "molecular-simulation"
+  - "statistical-mechanics"
+  - "computational-chemistry"
+date_created: "2025-01-12"
+date_updated: "2025-01-19"
+version: "1.1"
+
+# Optional fields
+difficulty_level: "Intermediate"
+assessment_included: true
+instructor_notes: "Includes guided exercises in computational method development and scientific programming best practices"
