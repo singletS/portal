@@ -1,0 +1,320 @@
+[
+  {
+    "title": "Computational Spectroscopy: Automated Data Analysis and Structure Elucidation",
+    "description": "Apply machine learning and signal processing techniques to analyze NMR, IR, and UV-Vis spectroscopic data for molecular structure determination.",
+    "expanded_description": "This advanced lesson integrates spectroscopic theory with modern data science techniques to automate \nspectral interpretation and structure elucidation. Students will develop computational workflows for \nprocessing large spectroscopic datasets, implementing peak detection algorithms, and using machine \nlearning for pattern recognition.\n\nThrough hands-on programming exercises, students will build tools for automated peak assignment, \nbaseline correction, and multivariate analysis of spectroscopic data. The lesson emphasizes \nreproducible research practices and development of robust analytical pipelines.\n",
+    "programming_skill": "Advanced",
+    "primary_course": "Analytical Chemistry",
+    "also_for": [
+      "Physical Chemistry II",
+      "Instrumental Analysis",
+      "Computational Chemistry"
+    ],
+    "instructor": "Prof. Johnson",
+    "estimated_time": "4-5 hours total",
+    "format": "4-Part Notebook Module",
+    "notebooks": [
+      {
+        "title": "Spectroscopic Data Import and Preprocessing",
+        "description": "Loading instrument files, noise reduction, and baseline correction using signal processing techniques",
+        "filename": "01-data-preprocessing.ipynb",
+        "duration": "60 min"
+      },
+      {
+        "title": "Automated Peak Detection and Assignment",
+        "description": "Implementing algorithms for peak picking, integration, and chemical shift prediction",
+        "filename": "02-peak-analysis.ipynb",
+        "duration": "90 min"
+      },
+      {
+        "title": "Machine Learning for Spectral Classification",
+        "description": "Training models for functional group identification and compound classification",
+        "filename": "03-ml-classification.ipynb",
+        "duration": "75 min"
+      },
+      {
+        "title": "Integrated Structure Elucidation Workflow",
+        "description": "Combining multiple spectroscopic techniques for automated structure determination",
+        "filename": "04-structure-elucidation.ipynb",
+        "duration": "90 min"
+      }
+    ],
+    "scientific_objectives": [
+      "Develop automated workflows for spectroscopic data analysis",
+      "Apply signal processing techniques to improve spectral quality",
+      "Implement machine learning models for spectral interpretation",
+      "Validate computational predictions against experimental data",
+      "Design robust analytical pipelines for high-throughput analysis"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Process and manipulate large spectroscopic datasets using NumPy and Pandas",
+      "Implement digital signal processing algorithms with SciPy",
+      "Develop machine learning models using scikit-learn and TensorFlow",
+      "Create interactive data visualizations with Plotly and Bokeh",
+      "Build reproducible analysis workflows with version control and documentation"
+    ],
+    "scientific_prerequisites": [
+      "Advanced organic chemistry",
+      "Instrumental analysis or analytical chemistry",
+      "Linear algebra and statistics",
+      "Understanding of Fourier transforms"
+    ],
+    "programming_prerequisites": [
+      "Proficiency in Python programming",
+      "Experience with NumPy, Pandas, and Matplotlib",
+      "Familiarity with machine learning concepts",
+      "Version control with Git"
+    ],
+    "platforms": [
+      "Google Colab",
+      "Local Installation"
+    ],
+    "recommended_platform": "Google Colab",
+    "public_repo_path": "spectroscopy-ml-analysis",
+    "instructor_repo_path": "spectroscopy-ml-instructor",
+    "tags": [
+      "spectroscopy",
+      "machine-learning",
+      "signal-processing",
+      "data-science",
+      "automation"
+    ],
+    "date_created": "2025-01-05",
+    "date_updated": "2025-01-22",
+    "version": "2.0",
+    "difficulty_level": "Advanced",
+    "assessment_included": true,
+    "instructor_notes": "Includes real experimental datasets and challenges for method development",
+    "id": "spectroscopy-data-analysis"
+  },
+  {
+    "title": "Computational Thermodynamics: Energy Landscapes and Molecular Behavior",
+    "description": "Explore thermodynamic principles through molecular simulations and computational analysis of energy landscapes.",
+    "expanded_description": "This lesson integrates computational methods with fundamental thermodynamic concepts to provide students \nwith a quantitative understanding of energy, entropy, and equilibrium. Students will use Python to simulate \nmolecular systems, calculate thermodynamic properties, and visualize energy landscapes.\n\nThrough hands-on computational exercises, students will explore how molecular-level behavior gives rise to \nmacroscopic thermodynamic properties. The lesson emphasizes the connection between statistical mechanics \nand classical thermodynamics using modern computational tools.\n",
+    "programming_skill": "None",
+    "primary_course": "Physical Chemistry",
+    "also_for": [
+      "Chemical Engineering Thermodynamics",
+      "Statistical Mechanics"
+    ],
+    "instructor": "Dr. Smith",
+    "estimated_time": "3 hours",
+    "format": "Single Jupyter Notebook",
+    "notebook": {
+      "filename": "computational-thermodynamics.ipynb",
+      "duration": "3 hours"
+    },
+    "scientific_objectives": [
+      "Calculate thermodynamic properties from molecular simulations",
+      "Analyze energy landscapes and relate them to reaction spontaneity",
+      "Apply statistical mechanics principles to predict macroscopic behavior",
+      "Evaluate equilibrium constants using computational methods",
+      "Interpret phase transitions through molecular dynamics simulations"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Implement Monte Carlo simulations for thermodynamic systems",
+      "Use Python libraries for scientific computing (NumPy, SciPy, Matplotlib)",
+      "Visualize high-dimensional data and energy surfaces",
+      "Process and analyze large datasets from molecular simulations",
+      "Develop computational workflows for thermodynamic analysis"
+    ],
+    "scientific_prerequisites": [
+      "General chemistry with thermodynamics coverage",
+      "Calculus I and II",
+      "Basic understanding of probability and statistics"
+    ],
+    "programming_prerequisites": [
+      "No prior programming experience required",
+      "Computational thinking concepts introduced in lesson"
+    ],
+    "platforms": [
+      "Google Colab",
+      "ChemCompute"
+    ],
+    "recommended_platform": "Google Colab",
+    "public_repo_path": "computational-thermodynamics",
+    "instructor_repo_path": "computational-thermodynamics-instructor",
+    "tags": [
+      "thermodynamics",
+      "molecular-simulation",
+      "statistical-mechanics",
+      "computational-chemistry"
+    ],
+    "date_created": "2025-01-12",
+    "date_updated": "2025-01-19",
+    "version": "1.1",
+    "difficulty_level": "Intermediate",
+    "assessment_included": true,
+    "instructor_notes": "Includes guided exercises in computational method development and scientific programming best practices",
+    "id": "thermodynamics-fundamentals",
+    "notebooks": [
+      {
+        "title": "Computational Thermodynamics: Energy Landscapes and Molecular Behavior",
+        "description": "Explore thermodynamic principles through molecular simulations and computational analysis of energy landscapes.",
+        "filename": "computational-thermodynamics.ipynb",
+        "duration": "3 hours"
+      }
+    ]
+  },
+  {
+    "title": "Introduction to Chemical Bonding",
+    "description": "Learn the basics of ionic and covalent bonds, including electron sharing and transfer mechanisms.",
+    "expanded_description": "This comprehensive lesson introduces students to the fundamental principles of chemical bonding, \ncovering both ionic and covalent interactions. Through interactive Jupyter notebook exercises, \nstudents will explore how atoms combine to form compounds and understand the driving forces \nbehind chemical reactions.\n\nThe lesson combines theoretical concepts with computational examples, allowing students to \nvisualize molecular structures and calculate bonding energies using Python libraries. Students \nwill work with real chemical data and learn to interpret bonding patterns across the periodic table.\n",
+    "programming_skill": "Beginner",
+    "primary_course": "General Chemistry",
+    "also_for": [
+      "Physical Chemistry I"
+    ],
+    "instructor": "Dr. Smith",
+    "estimated_time": "3-4 hours total",
+    "format": "3-Part Notebook Module",
+    "notebooks": [
+      {
+        "title": "Ionic Bonding Fundamentals",
+        "description": "Introduction to electron transfer, lattice structures, and ionic compound formation",
+        "filename": "01-ionic-bonding.ipynb",
+        "duration": "45 min"
+      },
+      {
+        "title": "Covalent Bonding and Molecular Shapes",
+        "description": "Electron sharing mechanisms, VSEPR theory, and molecular geometry visualization",
+        "filename": "02-covalent-bonding.ipynb",
+        "duration": "60 min"
+      },
+      {
+        "title": "Advanced Bonding Theories",
+        "description": "Hybridization, resonance structures, and molecular orbital theory applications",
+        "filename": "03-advanced-bonding.ipynb",
+        "duration": "75 min"
+      }
+    ],
+    "scientific_objectives": [
+      "Distinguish between ionic and covalent bonding mechanisms",
+      "Predict bond formation based on electronegativity differences",
+      "Calculate lattice energies and bond dissociation energies",
+      "Apply bonding concepts to predict chemical properties",
+      "Interpret molecular geometry using VSEPR theory"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Execute Python code in Jupyter notebook environments",
+      "Visualize molecular structures using RDKit library",
+      "Import and manipulate chemical data with pandas",
+      "Create scientific plots and graphs with matplotlib",
+      "Use computational tools to validate theoretical predictions"
+    ],
+    "scientific_prerequisites": [
+      "Basic atomic structure (electrons, protons, neutrons)",
+      "Periodic table organization and trends",
+      "Elementary algebra and graphing"
+    ],
+    "programming_prerequisites": [
+      "Basic Python syntax (variables, functions)",
+      "Familiarity with Jupyter notebooks",
+      "No advanced programming knowledge required"
+    ],
+    "platforms": [
+      "Google Colab",
+      "ChemCompute",
+      "Local Installation"
+    ],
+    "recommended_platform": "Google Colab",
+    "public_repo_path": "bonding-module",
+    "instructor_repo_path": "bonding-instructor",
+    "tags": [
+      "bonding",
+      "molecules",
+      "fundamentals",
+      "chemistry"
+    ],
+    "date_created": "2025-01-15",
+    "date_updated": "2025-01-20",
+    "version": "1.0",
+    "difficulty_level": "Introductory",
+    "assessment_included": true,
+    "instructor_notes": "Includes worked solutions and teaching notes",
+    "id": "intro-chemical-bonding"
+  },
+  {
+    "title": "Molecular Dynamics Simulations: From Algorithm to Analysis",
+    "description": "Build molecular dynamics simulations from scratch and analyze protein folding dynamics using computational methods.",
+    "expanded_description": "This intermediate-level lesson guides students through the implementation and analysis of molecular \ndynamics simulations. Starting with basic integration algorithms, students will build a complete \nMD simulation engine and apply it to study protein conformational dynamics.\n\nStudents will learn to implement force field calculations, integrate equations of motion, and \nanalyze complex trajectory data. The lesson emphasizes both the theoretical foundations of MD \nsimulations and practical computational skills for biomolecular research.\n",
+    "programming_skill": "Intermediate",
+    "primary_course": "Physical Chemistry",
+    "also_for": [
+      "Biochemistry",
+      "Computational Chemistry",
+      "Biophysics"
+    ],
+    "instructor": "Dr. Chen",
+    "estimated_time": "6 hours total",
+    "format": "3-Part Notebook Module",
+    "notebooks": [
+      {
+        "title": "MD Fundamentals: Forces and Integration",
+        "description": "Implementing basic MD algorithms, force calculations, and numerical integration schemes",
+        "filename": "01-md-fundamentals.ipynb",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Protein Simulation Setup and Execution",
+        "description": "Setting up realistic protein simulations with solvation and periodic boundary conditions",
+        "filename": "02-protein-simulation.ipynb",
+        "duration": "2.5 hours"
+      },
+      {
+        "title": "Trajectory Analysis and Visualization",
+        "description": "Analyzing conformational changes, calculating thermodynamic properties, and creating molecular visualizations",
+        "filename": "03-trajectory-analysis.ipynb",
+        "duration": "1.5 hours"
+      }
+    ],
+    "scientific_objectives": [
+      "Understand the theoretical basis of molecular dynamics simulations",
+      "Apply force field methods to calculate molecular interactions",
+      "Analyze protein conformational dynamics and folding pathways",
+      "Calculate thermodynamic and kinetic properties from MD trajectories",
+      "Interpret simulation results in the context of experimental observations"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Implement numerical integration algorithms for differential equations",
+      "Optimize computational performance for large-scale simulations",
+      "Manage and analyze large trajectory datasets efficiently",
+      "Create interactive 3D molecular visualizations",
+      "Develop modular, reusable simulation code with proper documentation"
+    ],
+    "scientific_prerequisites": [
+      "Physical chemistry with statistical mechanics",
+      "Basic biochemistry and protein structure",
+      "Calculus III and differential equations",
+      "Classical mechanics fundamentals"
+    ],
+    "programming_prerequisites": [
+      "Solid Python programming skills",
+      "Understanding of NumPy array operations",
+      "Basic knowledge of algorithms and data structures",
+      "Familiarity with scientific computing concepts"
+    ],
+    "platforms": [
+      "Google Colab",
+      "ChemCompute",
+      "Local Installation"
+    ],
+    "recommended_platform": "ChemCompute",
+    "public_repo_path": "molecular-dynamics-tutorial",
+    "instructor_repo_path": "molecular-dynamics-instructor",
+    "tags": [
+      "molecular-dynamics",
+      "simulation",
+      "protein-folding",
+      "computational-biophysics",
+      "algorithms"
+    ],
+    "date_created": "2025-01-08",
+    "date_updated": "2025-01-25",
+    "version": "1.3",
+    "difficulty_level": "Intermediate",
+    "assessment_included": true,
+    "instructor_notes": "Includes performance optimization challenges and extension projects for advanced students",
+    "id": "molecular-dynamics-simulation"
+  }
+]
