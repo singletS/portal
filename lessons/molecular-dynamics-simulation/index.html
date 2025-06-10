@@ -155,26 +155,30 @@
 
         .lesson-meta-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 32px;
             margin-bottom: 24px;
         }
 
         .meta-item {
             display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border);
+            flex-direction: column;
+            padding: 12px 0;
         }
 
         .meta-label {
+            font-size: 12px;
             font-weight: 600;
             color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
         }
 
         .meta-value {
+            font-size: 14px;
             color: var(--text-primary);
-            text-align: right;
+            font-weight: 500;
         }
 
         .lesson-tags {
@@ -1042,6 +1046,20 @@ simulations and practical computational skills for biomolecular research.</p>
                 document.body.classList.add('dark-theme');
                 document.getElementById('themeIcon').innerHTML = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
                 document.getElementById('themeText').textContent = 'Light Mode';
+            }
+        }
+
+        // Toggle objectives function
+        function toggleObjectives(button) {
+            const objectives = button.nextElementSibling;
+            const isCollapsed = objectives.classList.contains('collapsed');
+            
+            if (isCollapsed) {
+                objectives.classList.remove('collapsed');
+                button.textContent = 'Hide Learning Objectives';
+            } else {
+                objectives.classList.add('collapsed');
+                button.textContent = 'Show Learning Objectives';
             }
         }
 
