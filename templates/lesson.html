@@ -871,6 +871,20 @@
             }
         }
 
+        // Toggle objectives function
+        function toggleObjectives(button) {
+            const objectives = button.nextElementSibling;
+            const isCollapsed = objectives.classList.contains('collapsed');
+            
+            if (isCollapsed) {
+                objectives.classList.remove('collapsed');
+                button.textContent = 'Hide Learning Objectives';
+            } else {
+                objectives.classList.add('collapsed');
+                button.textContent = 'Show Learning Objectives';
+            }
+        }
+
         // Initialize
         loadTheme();
     </script>
