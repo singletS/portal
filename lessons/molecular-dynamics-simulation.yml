@@ -21,24 +21,69 @@ also_for:
   - "Biophysics"
 instructor: "Dr. Chen"
 estimated_time: "6 hours total"
-format: "3-Part Notebook Module"
+format: "Multi-Part Materials Module"
 
-# Multi-notebook module
-notebooks:
+# Materials using new flexible format
+materials:
   - title: "MD Fundamentals: Forces and Integration"
     description: "Implementing basic MD algorithms, force calculations, and numerical integration schemes"
-    filename: "01-md-fundamentals.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/01-md-fundamentals.ipynb"
     duration: "2 hours"
+    objectives:
+      - "Implement Verlet and Leapfrog integration algorithms"
+      - "Calculate forces using Lennard-Jones and Coulomb potentials"
+      - "Understand periodic boundary conditions and minimum image convention"
+      - "Optimize computational performance for force calculations"
+  
   - title: "Protein Simulation Setup and Execution"
     description: "Setting up realistic protein simulations with solvation and periodic boundary conditions"
-    filename: "02-protein-simulation.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/02-protein-simulation.ipynb"
     duration: "2.5 hours"
+    objectives:
+      - "Set up protein structures for MD simulation"
+      - "Apply AMBER or CHARMM force fields to biomolecules"
+      - "Implement explicit solvation and ion placement"
+      - "Configure temperature and pressure control algorithms"
+  
   - title: "Trajectory Analysis and Visualization"
     description: "Analyzing conformational changes, calculating thermodynamic properties, and creating molecular visualizations"
-    filename: "03-trajectory-analysis.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/03-trajectory-analysis.ipynb"
     duration: "1.5 hours"
+    objectives:
+      - "Calculate RMSD, RMSF, and radius of gyration"
+      - "Perform principal component analysis on trajectories"
+      - "Generate free energy landscapes from simulation data"
+      - "Create interactive 3D visualizations with NGLView"
+  
+  - title: "MD Theory and Methods Lecture"
+    description: "Comprehensive overview of molecular dynamics theory, algorithms, and applications"
+    type: "slides"
+    url: "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/slides/md-theory.pdf"
+    duration: "45 min"
+  
+  - title: "Protein Structure Dataset"
+    description: "Sample protein structures and pre-computed trajectories for analysis exercises"
+    type: "dataset"
+    url: "https://github.com/your-org/molecular-dynamics-tutorial/tree/main/data/"
+    duration: "N/A"
+    objectives:
+      - "Work with real experimental protein structures"
+      - "Analyze trajectories from published simulations"
+  
+  - title: "Performance Optimization Guide"
+    description: "Advanced techniques for optimizing MD simulations on modern hardware"
+    type: "document"
+    url: "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/optimization-guide.md"
+    duration: "30 min"
+    objectives:
+      - "Understand GPU acceleration techniques"
+      - "Implement parallel algorithms for MD simulations"
+      - "Profile and optimize computational bottlenecks"
 
-# Learning objectives
+# Learning objectives (overall lesson)
 scientific_objectives:
   - "Understand the theoretical basis of molecular dynamics simulations"
   - "Apply force field methods to calculate molecular interactions"
@@ -86,7 +131,7 @@ tags:
   - "algorithms"
 date_created: "2025-01-08"
 date_updated: "2025-01-25"
-version: "1.3"
+version: "2.0"
 
 # Optional fields
 difficulty_level: "Intermediate"

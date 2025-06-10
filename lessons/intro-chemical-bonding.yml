@@ -20,24 +20,56 @@ also_for:
   - "Physical Chemistry I"
 instructor: "Dr. Smith"
 estimated_time: "3-4 hours total"
-format: "3-Part Notebook Module"
+format: "Multi-Part Materials Module"
 
-# Multi-notebook module
-notebooks:
+# Materials using new flexible format
+materials:
   - title: "Ionic Bonding Fundamentals"
     description: "Introduction to electron transfer, lattice structures, and ionic compound formation"
-    filename: "01-ionic-bonding.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/bonding-module/blob/main/01-ionic-bonding.ipynb"
     duration: "45 min"
+    objectives:
+      - "Understand electron transfer mechanisms in ionic bonding"
+      - "Calculate lattice energies using Born-Haber cycles"
+      - "Predict ionic compound formation from electronegativity differences"
+  
   - title: "Covalent Bonding and Molecular Shapes"
     description: "Electron sharing mechanisms, VSEPR theory, and molecular geometry visualization"
-    filename: "02-covalent-bonding.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/bonding-module/blob/main/02-covalent-bonding.ipynb"
     duration: "60 min"
+    objectives:
+      - "Apply VSEPR theory to predict molecular geometry"
+      - "Visualize molecular structures using computational tools"
+      - "Calculate bond energies and bond lengths"
+  
   - title: "Advanced Bonding Theories"
     description: "Hybridization, resonance structures, and molecular orbital theory applications"
-    filename: "03-advanced-bonding.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/bonding-module/blob/main/03-advanced-bonding.ipynb"
     duration: "75 min"
+    objectives:
+      - "Determine hybridization states from molecular geometry"
+      - "Draw resonance structures and calculate formal charges"
+      - "Apply molecular orbital theory to simple molecules"
+  
+  - title: "Bonding Concepts Review Slides"
+    description: "Summary presentation covering key bonding principles and computational methods"
+    type: "slides"
+    url: "https://github.com/your-org/bonding-module/blob/main/slides/bonding-review.pdf"
+    duration: "30 min"
+  
+  - title: "Practice Problem Set"
+    description: "Additional exercises for applying bonding concepts to real chemical systems"
+    type: "document"
+    url: "https://github.com/your-org/bonding-module/blob/main/practice-problems.pdf"
+    duration: "45 min"
+    objectives:
+      - "Apply bonding theories to predict molecular properties"
+      - "Solve multi-step problems involving energy calculations"
 
-# Learning objectives
+# Learning objectives (overall lesson)
 scientific_objectives:
   - "Distinguish between ionic and covalent bonding mechanisms"
   - "Predict bond formation based on electronegativity differences"
@@ -82,7 +114,7 @@ tags:
   - "chemistry"
 date_created: "2025-01-15"
 date_updated: "2025-01-20"
-version: "1.0"
+version: "2.0"
 
 # Optional fields
 difficulty_level: "Introductory"

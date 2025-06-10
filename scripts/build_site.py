@@ -33,15 +33,27 @@ def process_lesson_data(lesson_data, lesson_id):
     """Process lesson data and add computed fields"""
     lesson_data['id'] = lesson_id
     
-    # Handle single notebook vs multiple notebooks
-    if 'notebook' in lesson_data and 'notebooks' not in lesson_data:
-        # Convert single notebook to notebooks array for consistency
-        lesson_data['notebooks'] = [{
+    # Handle legacy formats - convert to materials if needed
+    if 'notebook' in lesson_data and 'materials' not in lesson_data:
+        # Convert single notebook to materials format
+        lesson_data['materials'] = [{
             'title': lesson_data['title'],
             'description': lesson_data['description'],
-            'filename': lesson_data['notebook']['filename'],
+            'type': 'notebook',
+            'url': f"https://github.com/{CONFIG['github_org']}/{CONFIG['github_repo']}/blob/main/{lesson_data.get('public_repo_path', lesson_id)}/{lesson_data['notebook']['filename']}",
             'duration': lesson_data['notebook']['duration']
         }]
+    elif 'notebooks' in lesson_data and 'materials' not in lesson_data:
+        # Convert notebooks array to materials format
+        lesson_data['materials'] = []
+        for nb in lesson_data['notebooks']:
+            lesson_data['materials'].append({
+                'title': nb['title'],
+                'description': nb['description'],
+                'type': 'notebook',
+                'url': f"https://github.com/{CONFIG['github_org']}/{CONFIG['github_repo']}/blob/main/{lesson_data.get('public_repo_path', lesson_id)}/{nb['filename']}",
+                'duration': nb['duration']
+            })
     
     return lesson_data
 
@@ -144,6 +156,28 @@ def validate_lesson_data(lesson_data, filename):
     if missing_fields:
         print(f"Warning: {filename} is missing required fields: {missing_fields}")
         return False
+    
+    # Check for materials OR legacy notebook formats
+    has_materials = 'materials' in lesson_data
+    has_notebooks = 'notebooks' in lesson_data
+    has_notebook = 'notebook' in lesson_data
+    
+    if not (has_materials or has_notebooks or has_notebook):
+        print(f"Warning: {filename} has no materials, notebooks, or notebook field")
+        return False
+    
+    # Validate materials structure if present
+    if has_materials:
+        if not isinstance(lesson_data['materials'], list):
+            print(f"Warning: {filename} materials field must be a list")
+            return False
+        
+        for i, material in enumerate(lesson_data['materials']):
+            required_material_fields = ['title', 'description', 'type', 'url', 'duration']
+            for field in required_material_fields:
+                if field not in material:
+                    print(f"Warning: {filename} material {i+1} is missing required field: {field}")
+                    return False
     
     return True
 

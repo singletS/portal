@@ -349,30 +349,93 @@
         }
 
         /* Materials Section */
-        .materials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+        .materials-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
         }
 
-        .material-card {
+        .material-item {
             background: var(--surface);
             padding: 20px;
             border-radius: 8px;
             border: 1px solid var(--border);
+            transition: all 0.2s ease;
         }
 
-        .material-card h4 {
+        .material-item:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-1px);
+        }
+
+        .material-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .material-type-icon {
+            width: 18px;
+            height: 18px;
+            fill: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .material-title {
+            margin: 0;
             font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .material-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .material-objectives {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .material-objectives.collapsed {
+            display: none;
+        }
+
+        .objectives-toggle {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            cursor: pointer;
+            font-size: 12px;
+            padding: 4px 0;
+            text-decoration: underline;
+        }
+
+        .objectives-toggle:hover {
+            opacity: 0.8;
+        }
+
+        .material-objectives h5 {
+            font-size: 13px;
             font-weight: 600;
             margin-bottom: 8px;
             color: var(--text-primary);
         }
 
-        .material-card p {
-            font-size: 14px;
+        .material-objectives ul {
+            margin-left: 16px;
+        }
+
+        .material-objectives li {
+            font-size: 13px;
             color: var(--text-secondary);
-            margin-bottom: 16px;
+            margin-bottom: 4px;
         }
 
         .btn {
@@ -640,8 +703,68 @@
         <div class="content-section">
             <h2>Course Materials</h2>
             
+            {% if materials %}
+            <div class="materials-list">
+                {% for material in materials %}
+                <div class="material-item">
+                    <div class="material-header">
+                        {% if material.type == "notebook" %}
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        {% elif material.type == "slides" %}
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M8.5 8.5L11 6L14 9l3-3.5V19H6V8.5zm11 11V5H4v14.5h15.5z"/>
+                        </svg>
+                        {% elif material.type == "document" %}
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        </svg>
+                        {% elif material.type == "video" %}
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M8,5.14V19.14L19,12.14L8,5.14Z"/>
+                        </svg>
+                        {% elif material.type == "dataset" %}
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"/>
+                        </svg>
+                        {% else %}
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/>
+                        </svg>
+                        {% endif %}
+                        <h4 class="material-title">{{ material.title }}</h4>
+                    </div>
+                    <p>{{ material.description }}</p>
+                    <div class="material-actions">
+                        {% if material.type == "notebook" %}
+                        <a href="{{ material.url }}" class="btn btn-primary">Open Notebook</a>
+                        {% elif material.type == "slides" %}
+                        <a href="{{ material.url }}" class="btn btn-secondary">View Slides</a>
+                        {% elif material.type == "video" %}
+                        <a href="{{ material.url }}" class="btn btn-secondary">Watch Video</a>
+                        {% else %}
+                        <a href="{{ material.url }}" class="btn btn-secondary">Access Material</a>
+                        {% endif %}
+                        <span class="duration">{{ material.duration }}</span>
+                    </div>
+                    {% if material.objectives %}
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            {% for objective in material.objectives %}
+                            <li>{{ objective }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            {% elif notebooks %}
+            <!-- Legacy notebook support -->
             <h3>Student Materials</h3>
-            {% if notebooks %}
             <div class="notebook-sequence">
                 {% for notebook in notebooks %}
                 <div class="notebook-item">
@@ -658,6 +781,8 @@
                 {% endfor %}
             </div>
             {% elif notebook %}
+            <!-- Single notebook support -->
+            <h3>Student Materials</h3>
             <div class="notebook-sequence">
                 <div class="notebook-item">
                     <div class="notebook-header">

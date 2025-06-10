@@ -22,28 +22,91 @@ also_for:
   - "Computational Chemistry"
 instructor: "Prof. Johnson"
 estimated_time: "4-5 hours total"
-format: "4-Part Notebook Module"
+format: "Multi-Part Materials Module"
 
-# Multi-notebook module
-notebooks:
+# Materials using new flexible format
+materials:
   - title: "Spectroscopic Data Import and Preprocessing"
     description: "Loading instrument files, noise reduction, and baseline correction using signal processing techniques"
-    filename: "01-data-preprocessing.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/01-data-preprocessing.ipynb"
     duration: "60 min"
+    objectives:
+      - "Import spectral data from common instrument formats (Bruker, Varian, etc.)"
+      - "Implement baseline correction algorithms (polynomial, asymmetric least squares)"
+      - "Apply digital filters for noise reduction and smoothing"
+      - "Perform phase correction and referencing for NMR spectra"
+  
   - title: "Automated Peak Detection and Assignment"
     description: "Implementing algorithms for peak picking, integration, and chemical shift prediction"
-    filename: "02-peak-analysis.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/02-peak-analysis.ipynb"
     duration: "90 min"
+    objectives:
+      - "Develop peak detection algorithms using derivative and wavelet methods"
+      - "Implement automated peak integration and deconvolution"
+      - "Build chemical shift prediction models using molecular descriptors"
+      - "Validate peak assignments against spectral databases"
+  
   - title: "Machine Learning for Spectral Classification"
     description: "Training models for functional group identification and compound classification"
-    filename: "03-ml-classification.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/03-ml-classification.ipynb"
     duration: "75 min"
+    objectives:
+      - "Train convolutional neural networks for spectral pattern recognition"
+      - "Implement dimensionality reduction techniques (PCA, t-SNE) for spectral data"
+      - "Develop ensemble methods for functional group classification"
+      - "Evaluate model performance using cross-validation and confusion matrices"
+  
   - title: "Integrated Structure Elucidation Workflow"
     description: "Combining multiple spectroscopic techniques for automated structure determination"
-    filename: "04-structure-elucidation.ipynb"
+    type: "notebook"
+    url: "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/04-structure-elucidation.ipynb"
     duration: "90 min"
+    objectives:
+      - "Integrate NMR, IR, and MS data for structure determination"
+      - "Implement graph-based algorithms for molecular assembly"
+      - "Build confidence scoring systems for structural proposals"
+      - "Generate comprehensive analytical reports with uncertainty quantification"
+  
+  - title: "Signal Processing Theory for Spectroscopy"
+    description: "Mathematical foundations of digital signal processing applied to spectroscopic data"
+    type: "slides"
+    url: "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/slides/signal-processing-theory.pdf"
+    duration: "45 min"
+  
+  - title: "Experimental Spectral Database"
+    description: "Curated collection of NMR, IR, and UV-Vis spectra with known structures for training and validation"
+    type: "dataset"
+    url: "https://github.com/your-org/spectroscopy-ml-analysis/tree/main/data/spectral-database/"
+    duration: "N/A"
+    objectives:
+      - "Work with real experimental spectroscopic data"
+      - "Understand data quality issues and experimental artifacts"
+      - "Practice with diverse molecular structures and spectral patterns"
+  
+  - title: "Machine Learning Model Development Tutorial"
+    description: "Step-by-step guide for developing and deploying ML models for spectroscopic analysis"
+    type: "document"
+    url: "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/ml-development-guide.md"
+    duration: "30 min"
+    objectives:
+      - "Design robust training and validation datasets"
+      - "Implement best practices for model evaluation and deployment"
+      - "Address overfitting and generalization challenges in spectroscopic ML"
+  
+  - title: "Interactive Spectral Analysis Dashboard"
+    description: "Web-based tool for exploring spectral data and testing trained models"
+    type: "software"
+    url: "https://github.com/your-org/spectroscopy-ml-analysis/tree/main/dashboard/"
+    duration: "20 min"
+    objectives:
+      - "Use interactive tools for spectral exploration and analysis"
+      - "Test machine learning models on new spectroscopic data"
+      - "Generate publication-quality figures and reports"
 
-# Learning objectives
+# Learning objectives (overall lesson)
 scientific_objectives:
   - "Develop automated workflows for spectroscopic data analysis"
   - "Apply signal processing techniques to improve spectral quality"

@@ -20,14 +20,64 @@ also_for:
   - "Statistical Mechanics"
 instructor: "Dr. Smith"
 estimated_time: "3 hours"
-format: "Single Jupyter Notebook"
+format: "Multi-Part Materials Module"
 
-# Single notebook lesson
-notebook:
-  filename: "computational-thermodynamics.ipynb"
-  duration: "3 hours"
+# Materials using new flexible format
+materials:
+  - title: "Interactive Thermodynamics Notebook"
+    description: "Hands-on exploration of thermodynamic concepts through computational exercises and molecular simulations"
+    type: "notebook"
+    url: "https://github.com/your-org/computational-thermodynamics/blob/main/thermodynamics-interactive.ipynb"
+    duration: "2.5 hours"
+    objectives:
+      - "Calculate thermodynamic properties from molecular simulations"
+      - "Visualize energy landscapes and potential surfaces"
+      - "Implement simple Monte Carlo simulations for gas behavior"
+      - "Connect molecular-level interactions to macroscopic properties"
+      - "Analyze phase transitions using computational models"
+  
+  - title: "Thermodynamics Fundamentals Lecture"
+    description: "Introduction to key thermodynamic concepts and their computational implementation"
+    type: "slides"
+    url: "https://github.com/your-org/computational-thermodynamics/blob/main/slides/thermo-fundamentals.pdf"
+    duration: "30 min"
+  
+  - title: "Programming Primer for Scientists"
+    description: "Gentle introduction to Python programming concepts for students with no coding experience"
+    type: "document"
+    url: "https://github.com/your-org/computational-thermodynamics/blob/main/programming-primer.md"
+    duration: "20 min"
+    objectives:
+      - "Understand basic programming concepts (variables, functions, loops)"
+      - "Learn to read and modify simple Python code"
+      - "Gain confidence with computational thinking approaches"
+  
+  - title: "Thermodynamic Data Visualization Tutorial"
+    description: "Learn to create effective plots and visualizations for thermodynamic data"
+    type: "notebook"
+    url: "https://github.com/your-org/computational-thermodynamics/blob/main/visualization-tutorial.ipynb"
+    duration: "45 min"
+    objectives:
+      - "Create publication-quality plots of thermodynamic data"
+      - "Visualize 3D energy surfaces and phase diagrams"
+      - "Interpret computational results through effective graphics"
+  
+  - title: "Molecular Property Database"
+    description: "Collection of molecular properties and experimental data for thermodynamic calculations"
+    type: "dataset"
+    url: "https://github.com/your-org/computational-thermodynamics/tree/main/data/"
+    duration: "N/A"
+    objectives:
+      - "Work with real experimental thermodynamic data"
+      - "Compare computational predictions with measured values"
+  
+  - title: "Statistical Mechanics Connection Video"
+    description: "Short video explaining the bridge between statistical mechanics and classical thermodynamics"
+    type: "video"
+    url: "https://github.com/your-org/computational-thermodynamics/blob/main/videos/statmech-connection.mp4"
+    duration: "15 min"
 
-# Learning objectives
+# Learning objectives (overall lesson)
 scientific_objectives:
   - "Calculate thermodynamic properties from molecular simulations"
   - "Analyze energy landscapes and relate them to reaction spontaneity"
@@ -70,7 +120,7 @@ tags:
   - "computational-chemistry"
 date_created: "2025-01-12"
 date_updated: "2025-01-19"
-version: "1.1"
+version: "2.0"
 
 # Optional fields
 difficulty_level: "Intermediate"
