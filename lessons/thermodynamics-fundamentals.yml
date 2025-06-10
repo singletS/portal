@@ -1,8 +1,4 @@
-# Prerequisites
-scientific_prerequisites:
-  - "High school chemistry"
-  - "Basic algebra and graphing"
-  - "Understanding of atoms# lessons/thermodynamics-fundamentals.yml
+# lessons/thermodynamics-fundamentals.yml
 
 # Basic metadata
 title: "Computational Thermodynamics: Energy Landscapes and Molecular Behavior"
