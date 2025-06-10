@@ -155,26 +155,30 @@
 
         .lesson-meta-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 32px;
             margin-bottom: 24px;
         }
 
         .meta-item {
             display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border);
+            flex-direction: column;
+            padding: 12px 0;
         }
 
         .meta-label {
+            font-size: 12px;
             font-weight: 600;
             color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
         }
 
         .meta-value {
+            font-size: 14px;
             color: var(--text-primary);
-            text-align: right;
+            font-weight: 500;
         }
 
         .lesson-tags {

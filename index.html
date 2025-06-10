@@ -41,7 +41,14 @@
             --text-secondary: var(--light-text-secondary);
             --border: var(--light-border);
             --shadow: var(--light-shadow);
+            opacity: 0;
+            animation: pageLoad 0.2s ease-in forwards;
         }
+
+        @keyframes pageLoad {
+            to { opacity: 1; }
+        }
+        
 
         /* Dark theme */
         body.dark-theme {
