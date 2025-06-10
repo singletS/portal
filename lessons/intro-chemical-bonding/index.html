@@ -349,30 +349,93 @@
         }
 
         /* Materials Section */
-        .materials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+        .materials-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
         }
 
-        .material-card {
+        .material-item {
             background: var(--surface);
             padding: 20px;
             border-radius: 8px;
             border: 1px solid var(--border);
+            transition: all 0.2s ease;
         }
 
-        .material-card h4 {
+        .material-item:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-1px);
+        }
+
+        .material-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .material-type-icon {
+            width: 18px;
+            height: 18px;
+            fill: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .material-title {
+            margin: 0;
             font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .material-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .material-objectives {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .material-objectives.collapsed {
+            display: none;
+        }
+
+        .objectives-toggle {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            cursor: pointer;
+            font-size: 12px;
+            padding: 4px 0;
+            text-decoration: underline;
+        }
+
+        .objectives-toggle:hover {
+            opacity: 0.8;
+        }
+
+        .material-objectives h5 {
+            font-size: 13px;
             font-weight: 600;
             margin-bottom: 8px;
             color: var(--text-primary);
         }
 
-        .material-card p {
-            font-size: 14px;
+        .material-objectives ul {
+            margin-left: 16px;
+        }
+
+        .material-objectives li {
+            font-size: 13px;
             color: var(--text-secondary);
-            margin-bottom: 16px;
+            margin-bottom: 4px;
         }
 
         .btn {
@@ -564,7 +627,7 @@
                 
                 <div class="meta-item">
                     <span class="meta-label">Format:</span>
-                    <span class="meta-value">3-Part Notebook Module</span>
+                    <span class="meta-value">Multi-Part Materials Module</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Instructor:</span>
@@ -677,44 +740,156 @@ will work with real chemical data and learn to interpret bonding patterns across
         <div class="content-section">
             <h2>Course Materials</h2>
             
-            <h3>Student Materials</h3>
             
-            <div class="notebook-sequence">
+            <div class="materials-list">
                 
-                <div class="notebook-item">
-                    <div class="notebook-header">
-                        <span class="notebook-number">1</span>
-                        <h4>Ionic Bonding Fundamentals</h4>
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Ionic Bonding Fundamentals</h4>
                     </div>
                     <p>Introduction to electron transfer, lattice structures, and ionic compound formation</p>
-                    <div class="notebook-actions">
-                        <a href="https://colab.research.google.com/github/your-org/public-lessons/blob/main/bonding-module/01-ionic-bonding.ipynb" class="btn btn-primary">Open in Colab</a>
-                        <span class="duration">~45 min</span>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/bonding-module/blob/main/01-ionic-bonding.ipynb" class="btn btn-primary">Open Notebook</a>
+                        
+                        <span class="duration">45 min</span>
                     </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Understand electron transfer mechanisms in ionic bonding</li>
+                            
+                            <li>Calculate lattice energies using Born-Haber cycles</li>
+                            
+                            <li>Predict ionic compound formation from electronegativity differences</li>
+                            
+                        </ul>
+                    </div>
+                    
                 </div>
                 
-                <div class="notebook-item">
-                    <div class="notebook-header">
-                        <span class="notebook-number">2</span>
-                        <h4>Covalent Bonding and Molecular Shapes</h4>
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Covalent Bonding and Molecular Shapes</h4>
                     </div>
                     <p>Electron sharing mechanisms, VSEPR theory, and molecular geometry visualization</p>
-                    <div class="notebook-actions">
-                        <a href="https://colab.research.google.com/github/your-org/public-lessons/blob/main/bonding-module/02-covalent-bonding.ipynb" class="btn btn-primary">Open in Colab</a>
-                        <span class="duration">~60 min</span>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/bonding-module/blob/main/02-covalent-bonding.ipynb" class="btn btn-primary">Open Notebook</a>
+                        
+                        <span class="duration">60 min</span>
                     </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Apply VSEPR theory to predict molecular geometry</li>
+                            
+                            <li>Visualize molecular structures using computational tools</li>
+                            
+                            <li>Calculate bond energies and bond lengths</li>
+                            
+                        </ul>
+                    </div>
+                    
                 </div>
                 
-                <div class="notebook-item">
-                    <div class="notebook-header">
-                        <span class="notebook-number">3</span>
-                        <h4>Advanced Bonding Theories</h4>
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Advanced Bonding Theories</h4>
                     </div>
                     <p>Hybridization, resonance structures, and molecular orbital theory applications</p>
-                    <div class="notebook-actions">
-                        <a href="https://colab.research.google.com/github/your-org/public-lessons/blob/main/bonding-module/03-advanced-bonding.ipynb" class="btn btn-primary">Open in Colab</a>
-                        <span class="duration">~75 min</span>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/bonding-module/blob/main/03-advanced-bonding.ipynb" class="btn btn-primary">Open Notebook</a>
+                        
+                        <span class="duration">75 min</span>
                     </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Determine hybridization states from molecular geometry</li>
+                            
+                            <li>Draw resonance structures and calculate formal charges</li>
+                            
+                            <li>Apply molecular orbital theory to simple molecules</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M8.5 8.5L11 6L14 9l3-3.5V19H6V8.5zm11 11V5H4v14.5h15.5z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Bonding Concepts Review Slides</h4>
+                    </div>
+                    <p>Summary presentation covering key bonding principles and computational methods</p>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/bonding-module/blob/main/slides/bonding-review.pdf" class="btn btn-secondary">View Slides</a>
+                        
+                        <span class="duration">30 min</span>
+                    </div>
+                    
+                </div>
+                
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Practice Problem Set</h4>
+                    </div>
+                    <p>Additional exercises for applying bonding concepts to real chemical systems</p>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/bonding-module/blob/main/practice-problems.pdf" class="btn btn-secondary">Access Material</a>
+                        
+                        <span class="duration">45 min</span>
+                    </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Apply bonding theories to predict molecular properties</li>
+                            
+                            <li>Solve multi-step problems involving energy calculations</li>
+                            
+                        </ul>
+                    </div>
+                    
                 </div>
                 
             </div>

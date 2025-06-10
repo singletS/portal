@@ -349,30 +349,93 @@
         }
 
         /* Materials Section */
-        .materials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+        .materials-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
         }
 
-        .material-card {
+        .material-item {
             background: var(--surface);
             padding: 20px;
             border-radius: 8px;
             border: 1px solid var(--border);
+            transition: all 0.2s ease;
         }
 
-        .material-card h4 {
+        .material-item:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-1px);
+        }
+
+        .material-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .material-type-icon {
+            width: 18px;
+            height: 18px;
+            fill: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .material-title {
+            margin: 0;
             font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .material-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .material-objectives {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .material-objectives.collapsed {
+            display: none;
+        }
+
+        .objectives-toggle {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            cursor: pointer;
+            font-size: 12px;
+            padding: 4px 0;
+            text-decoration: underline;
+        }
+
+        .objectives-toggle:hover {
+            opacity: 0.8;
+        }
+
+        .material-objectives h5 {
+            font-size: 13px;
             font-weight: 600;
             margin-bottom: 8px;
             color: var(--text-primary);
         }
 
-        .material-card p {
-            font-size: 14px;
+        .material-objectives ul {
+            margin-left: 16px;
+        }
+
+        .material-objectives li {
+            font-size: 13px;
             color: var(--text-secondary);
-            margin-bottom: 16px;
+            margin-bottom: 4px;
         }
 
         .btn {
@@ -564,7 +627,7 @@
                 
                 <div class="meta-item">
                     <span class="meta-label">Format:</span>
-                    <span class="meta-value">3-Part Notebook Module</span>
+                    <span class="meta-value">Multi-Part Materials Module</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Instructor:</span>
@@ -682,44 +745,195 @@ simulations and practical computational skills for biomolecular research.</p>
         <div class="content-section">
             <h2>Course Materials</h2>
             
-            <h3>Student Materials</h3>
             
-            <div class="notebook-sequence">
+            <div class="materials-list">
                 
-                <div class="notebook-item">
-                    <div class="notebook-header">
-                        <span class="notebook-number">1</span>
-                        <h4>MD Fundamentals: Forces and Integration</h4>
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">MD Fundamentals: Forces and Integration</h4>
                     </div>
                     <p>Implementing basic MD algorithms, force calculations, and numerical integration schemes</p>
-                    <div class="notebook-actions">
-                        <a href="https://colab.research.google.com/github/your-org/public-lessons/blob/main/molecular-dynamics-tutorial/01-md-fundamentals.ipynb" class="btn btn-primary">Open in Colab</a>
-                        <span class="duration">~2 hours</span>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/molecular-dynamics-tutorial/blob/main/01-md-fundamentals.ipynb" class="btn btn-primary">Open Notebook</a>
+                        
+                        <span class="duration">2 hours</span>
                     </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Implement Verlet and Leapfrog integration algorithms</li>
+                            
+                            <li>Calculate forces using Lennard-Jones and Coulomb potentials</li>
+                            
+                            <li>Understand periodic boundary conditions and minimum image convention</li>
+                            
+                            <li>Optimize computational performance for force calculations</li>
+                            
+                        </ul>
+                    </div>
+                    
                 </div>
                 
-                <div class="notebook-item">
-                    <div class="notebook-header">
-                        <span class="notebook-number">2</span>
-                        <h4>Protein Simulation Setup and Execution</h4>
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Protein Simulation Setup and Execution</h4>
                     </div>
                     <p>Setting up realistic protein simulations with solvation and periodic boundary conditions</p>
-                    <div class="notebook-actions">
-                        <a href="https://colab.research.google.com/github/your-org/public-lessons/blob/main/molecular-dynamics-tutorial/02-protein-simulation.ipynb" class="btn btn-primary">Open in Colab</a>
-                        <span class="duration">~2.5 hours</span>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/molecular-dynamics-tutorial/blob/main/02-protein-simulation.ipynb" class="btn btn-primary">Open Notebook</a>
+                        
+                        <span class="duration">2.5 hours</span>
                     </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Set up protein structures for MD simulation</li>
+                            
+                            <li>Apply AMBER or CHARMM force fields to biomolecules</li>
+                            
+                            <li>Implement explicit solvation and ion placement</li>
+                            
+                            <li>Configure temperature and pressure control algorithms</li>
+                            
+                        </ul>
+                    </div>
+                    
                 </div>
                 
-                <div class="notebook-item">
-                    <div class="notebook-header">
-                        <span class="notebook-number">3</span>
-                        <h4>Trajectory Analysis and Visualization</h4>
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Trajectory Analysis and Visualization</h4>
                     </div>
                     <p>Analyzing conformational changes, calculating thermodynamic properties, and creating molecular visualizations</p>
-                    <div class="notebook-actions">
-                        <a href="https://colab.research.google.com/github/your-org/public-lessons/blob/main/molecular-dynamics-tutorial/03-trajectory-analysis.ipynb" class="btn btn-primary">Open in Colab</a>
-                        <span class="duration">~1.5 hours</span>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/molecular-dynamics-tutorial/blob/main/03-trajectory-analysis.ipynb" class="btn btn-primary">Open Notebook</a>
+                        
+                        <span class="duration">1.5 hours</span>
                     </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Calculate RMSD, RMSF, and radius of gyration</li>
+                            
+                            <li>Perform principal component analysis on trajectories</li>
+                            
+                            <li>Generate free energy landscapes from simulation data</li>
+                            
+                            <li>Create interactive 3D visualizations with NGLView</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M8.5 8.5L11 6L14 9l3-3.5V19H6V8.5zm11 11V5H4v14.5h15.5z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">MD Theory and Methods Lecture</h4>
+                    </div>
+                    <p>Comprehensive overview of molecular dynamics theory, algorithms, and applications</p>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/molecular-dynamics-tutorial/blob/main/slides/md-theory.pdf" class="btn btn-secondary">View Slides</a>
+                        
+                        <span class="duration">45 min</span>
+                    </div>
+                    
+                </div>
+                
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Protein Structure Dataset</h4>
+                    </div>
+                    <p>Sample protein structures and pre-computed trajectories for analysis exercises</p>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/molecular-dynamics-tutorial/tree/main/data/" class="btn btn-secondary">Access Material</a>
+                        
+                        <span class="duration">N/A</span>
+                    </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Work with real experimental protein structures</li>
+                            
+                            <li>Analyze trajectories from published simulations</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="material-item">
+                    <div class="material-header">
+                        
+                        <svg class="material-type-icon" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        </svg>
+                        
+                        <h4 class="material-title">Performance Optimization Guide</h4>
+                    </div>
+                    <p>Advanced techniques for optimizing MD simulations on modern hardware</p>
+                    <div class="material-actions">
+                        
+                        <a href="https://github.com/your-org/molecular-dynamics-tutorial/blob/main/optimization-guide.md" class="btn btn-secondary">Access Material</a>
+                        
+                        <span class="duration">30 min</span>
+                    </div>
+                    
+                    <button class="objectives-toggle" onclick="toggleObjectives(this)">Show Learning Objectives</button>
+                    <div class="material-objectives collapsed">
+                        <h5>Learning Objectives:</h5>
+                        <ul>
+                            
+                            <li>Understand GPU acceleration techniques</li>
+                            
+                            <li>Implement parallel algorithms for MD simulations</li>
+                            
+                            <li>Profile and optimize computational bottlenecks</li>
+                            
+                        </ul>
+                    </div>
+                    
                 </div>
                 
             </div>
