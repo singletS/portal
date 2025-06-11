@@ -191,11 +191,16 @@ def validate_lesson_data(lesson_data, filename):
             return False
         
         for i, material in enumerate(lesson_data['materials']):
-            required_material_fields = ['title', 'description', 'type', 'url', 'duration']
+            required_material_fields = ['title', 'description', 'type', 'duration']
             for field in required_material_fields:
                 if field not in material:
                     print(f"Warning: {filename} material {i+1} is missing required field: {field}")
                     return False
+            
+            # Check that at least one of github_url or colab_url is present
+            if 'github_url' not in material and 'colab_url' not in material:
+                print(f"Warning: {filename} material {i+1} must have either github_url or colab_url")
+                return False    
     
     # Validate authors field
     if 'authors' in lesson_data:

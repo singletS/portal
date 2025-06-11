@@ -22,9 +22,9 @@
             </button>
         </div>
 
-        <div>
+        <div class="back-link">
                 <a href="../../index.html" class="back-link">← Back to Lesson Portal</a>
-            </div>
+        </div>
 
         <div class="lesson-header">
             <h1 class="lesson-title">{{ title }}</h1>
@@ -159,9 +159,12 @@
                     <div class="material-actions">
                         {% if material.type == "notebook" %}
                         <div class="notebook-buttons">
-                            <a href="{{ material.url }}" class="btn btn-primary">Open in Colab</a>
-                            {% set github_url = material.url.replace('colab.research.google.com/github/', 'github.com/') %}
-                            <a href="{{ github_url }}" class="btn btn-secondary">View Notebook</a>
+                            {% if material.colab_url %}
+                            <a href="{{ material.colab_url }}" class="btn btn-primary">Open in Colab</a>
+                            {% endif %}
+                            {% if material.github_url %}
+                            <a href="{{ material.github_url }}" class="btn btn-secondary">View Notebook</a>
+                            {% endif %}
                         </div>
                         {% elif material.type == "slides" %}
                         <a href="{{ material.url }}" class="btn btn-secondary">View Slides</a>
