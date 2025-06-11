@@ -61,10 +61,19 @@ body {
     transition: all 0.2s ease;
 }
 
+.logo {
+            height: 200px;
+            width: auto;
+        }
+
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 24px;
+}
+
+.back-link {
+    padding-bottom: 1.5rem;
 }
 
 /* Header */
