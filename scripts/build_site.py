@@ -123,12 +123,21 @@ def copy_static_files(source_dir, output_dir):
     # Copy index.html directly
     index_source = Path(source_dir) / 'index.html'
     index_dest = Path(output_dir) / 'index.html'
+
+    css_source = Path(source_dir) / 'theme.css'
+    css_dest = Path(output_dir) / 'theme.css'
     
     if index_source.exists():
         shutil.copy2(index_source, index_dest)
         print(f"Copied {index_source} to {index_dest}")
     else:
         print(f"Warning: {index_source} not found")
+
+    if css_source.exists():
+        shutil.copy2(css_source, css_dest)
+        print(f"Copied {css_source} to {css_dest}") 
+    else:
+        print(f"Warning: {css_source} not found")   
     
     # Copy static directory if it exists
     static_source = Path(source_dir) / 'static'
@@ -144,7 +153,7 @@ def validate_lesson_data(lesson_data, filename):
     """Validate lesson data has required fields"""
     required_fields = [
         'title', 'description', 'programming_skill', 'primary_course',
-        'instructor', 'format', 'scientific_objectives', 
+        'authors', 'format', 'scientific_objectives', 
         'cyberinfrastructure_objectives', 'platforms'
     ]
     
@@ -178,6 +187,13 @@ def validate_lesson_data(lesson_data, filename):
                 if field not in material:
                     print(f"Warning: {filename} material {i+1} is missing required field: {field}")
                     return False
+    
+    # Validate authors field
+    if 'authors' in lesson_data:
+        authors = lesson_data['authors']
+        if not isinstance(authors, (list, str)):
+            print(f"Warning: {filename} authors field must be a list or string")
+            return False
     
     return True
 
