@@ -126,6 +126,9 @@ def copy_static_files(source_dir, output_dir):
 
     css_source = Path(source_dir) / 'theme.css'
     css_dest = Path(output_dir) / 'theme.css'
+
+    logo_source = Path(source_dir) / 'act-cms-logo.svg'
+    logo_dest = Path(output_dir) / 'act-cms-logo.svg'
     
     if index_source.exists():
         shutil.copy2(index_source, index_dest)
@@ -137,7 +140,13 @@ def copy_static_files(source_dir, output_dir):
         shutil.copy2(css_source, css_dest)
         print(f"Copied {css_source} to {css_dest}") 
     else:
-        print(f"Warning: {css_source} not found")   
+        print(f"Warning: {css_source} not found")
+
+    if logo_source.exists():
+        shutil.copy2(logo_source, logo_dest)
+        print(f"Copied {logo_source} to {logo_dest}")
+    else:
+        print(f"Warning: {logo_source} not found")   
     
     # Copy static directory if it exists
     static_source = Path(source_dir) / 'static'

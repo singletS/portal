@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="theme.css">
-    <title>Lesson Portal</title>
+    <title>ACT-CMS Lesson Portal</title>
     <style>
        
     </style>
@@ -12,7 +12,11 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Lesson Portal</h1>
+            <div class="header-left">
+                <!-- Replace this placeholder with your actual logo -->
+                <img src="act-cms-logo.svg" alt="ACT-CMS Logo" class="logo" style="display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+            </div>
+            <h1>ACT-CMS Lesson Portal</h1>
             <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
                 <svg class="theme-icon" id="themeIcon" viewBox="0 0 24 24">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -81,7 +85,8 @@
         </div>
 
         <footer class="footer">
-            <p>Lesson Portal - Updated automatically via GitHub Actions</p>
+            <p>Accelerating Curricular Transformation in the Computational Molecular Sciences (ACT-CMS) is a project of The Molecular Sciences Software Institute</p>
+            <p>ACT-CMS is supported by NSF OAC 2321044 and 2321045.</p>
         </footer>
     </div>
 
