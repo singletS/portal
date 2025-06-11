@@ -1,376 +1,62 @@
 [
   {
-    "title": "Computational Spectroscopy: Automated Data Analysis and Structure Elucidation",
-    "description": "Apply machine learning and signal processing techniques to analyze NMR, IR, and UV-Vis spectroscopic data for molecular structure determination.",
-    "expanded_description": "This advanced lesson integrates spectroscopic theory with modern data science techniques to automate \nspectral interpretation and structure elucidation. Students will develop computational workflows for \nprocessing large spectroscopic datasets, implementing peak detection algorithms, and using machine \nlearning for pattern recognition.\n\nThrough hands-on programming exercises, students will build tools for automated peak assignment, \nbaseline correction, and multivariate analysis of spectroscopic data. The lesson emphasizes \nreproducible research practices and development of robust analytical pipelines.\n",
-    "programming_skill": "Advanced",
-    "primary_course": "Analytical Chemistry",
-    "also_for": [
-      "Physical Chemistry II",
-      "Instrumental Analysis",
-      "Computational Chemistry"
-    ],
-    "instructor": "Prof. Johnson",
-    "estimated_time": "4-5 hours total",
-    "format": "Multi-Part Materials Module",
-    "materials": [
-      {
-        "title": "Spectroscopic Data Import and Preprocessing",
-        "description": "Loading instrument files, noise reduction, and baseline correction using signal processing techniques",
-        "type": "notebook",
-        "url": "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/01-data-preprocessing.ipynb",
-        "duration": "60 min",
-        "objectives": [
-          "Import spectral data from common instrument formats (Bruker, Varian, etc.)",
-          "Implement baseline correction algorithms (polynomial, asymmetric least squares)",
-          "Apply digital filters for noise reduction and smoothing",
-          "Perform phase correction and referencing for NMR spectra"
-        ]
-      },
-      {
-        "title": "Automated Peak Detection and Assignment",
-        "description": "Implementing algorithms for peak picking, integration, and chemical shift prediction",
-        "type": "notebook",
-        "url": "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/02-peak-analysis.ipynb",
-        "duration": "90 min",
-        "objectives": [
-          "Develop peak detection algorithms using derivative and wavelet methods",
-          "Implement automated peak integration and deconvolution",
-          "Build chemical shift prediction models using molecular descriptors",
-          "Validate peak assignments against spectral databases"
-        ]
-      },
-      {
-        "title": "Machine Learning for Spectral Classification",
-        "description": "Training models for functional group identification and compound classification",
-        "type": "notebook",
-        "url": "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/03-ml-classification.ipynb",
-        "duration": "75 min",
-        "objectives": [
-          "Train convolutional neural networks for spectral pattern recognition",
-          "Implement dimensionality reduction techniques (PCA, t-SNE) for spectral data",
-          "Develop ensemble methods for functional group classification",
-          "Evaluate model performance using cross-validation and confusion matrices"
-        ]
-      },
-      {
-        "title": "Integrated Structure Elucidation Workflow",
-        "description": "Combining multiple spectroscopic techniques for automated structure determination",
-        "type": "notebook",
-        "url": "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/04-structure-elucidation.ipynb",
-        "duration": "90 min",
-        "objectives": [
-          "Integrate NMR, IR, and MS data for structure determination",
-          "Implement graph-based algorithms for molecular assembly",
-          "Build confidence scoring systems for structural proposals",
-          "Generate comprehensive analytical reports with uncertainty quantification"
-        ]
-      },
-      {
-        "title": "Signal Processing Theory for Spectroscopy",
-        "description": "Mathematical foundations of digital signal processing applied to spectroscopic data",
-        "type": "slides",
-        "url": "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/slides/signal-processing-theory.pdf",
-        "duration": "45 min"
-      },
-      {
-        "title": "Experimental Spectral Database",
-        "description": "Curated collection of NMR, IR, and UV-Vis spectra with known structures for training and validation",
-        "type": "dataset",
-        "url": "https://github.com/your-org/spectroscopy-ml-analysis/tree/main/data/spectral-database/",
-        "duration": "N/A",
-        "objectives": [
-          "Work with real experimental spectroscopic data",
-          "Understand data quality issues and experimental artifacts",
-          "Practice with diverse molecular structures and spectral patterns"
-        ]
-      },
-      {
-        "title": "Machine Learning Model Development Tutorial",
-        "description": "Step-by-step guide for developing and deploying ML models for spectroscopic analysis",
-        "type": "document",
-        "url": "https://github.com/your-org/spectroscopy-ml-analysis/blob/main/ml-development-guide.md",
-        "duration": "30 min",
-        "objectives": [
-          "Design robust training and validation datasets",
-          "Implement best practices for model evaluation and deployment",
-          "Address overfitting and generalization challenges in spectroscopic ML"
-        ]
-      },
-      {
-        "title": "Interactive Spectral Analysis Dashboard",
-        "description": "Web-based tool for exploring spectral data and testing trained models",
-        "type": "software",
-        "url": "https://github.com/your-org/spectroscopy-ml-analysis/tree/main/dashboard/",
-        "duration": "20 min",
-        "objectives": [
-          "Use interactive tools for spectral exploration and analysis",
-          "Test machine learning models on new spectroscopic data",
-          "Generate publication-quality figures and reports"
-        ]
-      }
-    ],
-    "scientific_objectives": [
-      "Develop automated workflows for spectroscopic data analysis",
-      "Apply signal processing techniques to improve spectral quality",
-      "Implement machine learning models for spectral interpretation",
-      "Validate computational predictions against experimental data",
-      "Design robust analytical pipelines for high-throughput analysis"
-    ],
-    "cyberinfrastructure_objectives": [
-      "Process and manipulate large spectroscopic datasets using NumPy and Pandas",
-      "Implement digital signal processing algorithms with SciPy",
-      "Develop machine learning models using scikit-learn and TensorFlow",
-      "Create interactive data visualizations with Plotly and Bokeh",
-      "Build reproducible analysis workflows with version control and documentation"
-    ],
-    "scientific_prerequisites": [
-      "Advanced organic chemistry",
-      "Instrumental analysis or analytical chemistry",
-      "Linear algebra and statistics",
-      "Understanding of Fourier transforms"
-    ],
-    "programming_prerequisites": [
-      "Proficiency in Python programming",
-      "Experience with NumPy, Pandas, and Matplotlib",
-      "Familiarity with machine learning concepts",
-      "Version control with Git"
-    ],
-    "platforms": [
-      "Google Colab",
-      "Local Installation"
-    ],
-    "recommended_platform": "Google Colab",
-    "public_repo_path": "spectroscopy-ml-analysis",
-    "instructor_repo_path": "spectroscopy-ml-instructor",
-    "tags": [
-      "spectroscopy",
-      "machine-learning",
-      "signal-processing",
-      "data-science",
-      "automation"
-    ],
-    "date_created": "2025-01-05",
-    "date_updated": "2025-01-22",
-    "version": "2.0",
-    "difficulty_level": "Advanced",
-    "assessment_included": true,
-    "instructor_notes": "Includes real experimental datasets and challenges for method development",
-    "id": "spectroscopy-data-analysis"
-  },
-  {
-    "title": "Computational Thermodynamics: Energy Landscapes and Molecular Behavior",
-    "description": "Explore thermodynamic principles through molecular simulations and computational analysis of energy landscapes.",
-    "expanded_description": "This lesson integrates computational methods with fundamental thermodynamic concepts to provide students \nwith a quantitative understanding of energy, entropy, and equilibrium. Students will use Python to simulate \nmolecular systems, calculate thermodynamic properties, and visualize energy landscapes.\n\nThrough hands-on computational exercises, students will explore how molecular-level behavior gives rise to \nmacroscopic thermodynamic properties. The lesson emphasizes the connection between statistical mechanics \nand classical thermodynamics using modern computational tools.\n",
+    "title": "Introduction to Programming for Molecular Scientists",
+    "description": "Learn fundamental programming concepts in Python including data types, file operations, and basic programming structures.",
+    "expanded_description": "This foundational module introduces students to programming concepts essential for computational molecular science. \nStudents will learn Python basics including variables, data types, control structures, and file operations through \nhands-on exercises designed for scientific applications.\n\nThe module emphasizes practical programming skills that serve as prerequisites for more advanced computational \nlessons in chemistry and molecular sciences.\n",
     "programming_skill": "None",
-    "primary_course": "Physical Chemistry",
+    "primary_course": "Foundational Module",
     "also_for": [
-      "Chemical Engineering Thermodynamics",
-      "Statistical Mechanics"
+      "None"
     ],
-    "instructor": "Dr. Smith",
-    "estimated_time": "3 hours",
+    "authors": [
+      "Dr. Jessica A. Nash",
+      "Prof. Ashley McDonald"
+    ],
+    "estimated_time": "2-3 hours",
     "format": "Multi-Part Materials Module",
     "materials": [
       {
-        "title": "Interactive Thermodynamics Notebook",
-        "description": "Hands-on exploration of thermodynamic concepts through computational exercises and molecular simulations",
+        "title": "Introduction to Python",
+        "description": "Introduction to Python programming language, basic data types, and operations.",
         "type": "notebook",
-        "url": "https://github.com/your-org/computational-thermodynamics/blob/main/thermodynamics-interactive.ipynb",
-        "duration": "2.5 hours",
+        "url": "https://colab.research.google.com/github/act-cms/foundational-modules/blob/main/intro-programming/colab-notebooks/student/introduction_to_python.ipynb",
+        "duration": "1 hour",
         "objectives": [
-          "Calculate thermodynamic properties from molecular simulations",
-          "Visualize energy landscapes and potential surfaces",
-          "Implement simple Monte Carlo simulations for gas behavior",
-          "Connect molecular-level interactions to macroscopic properties",
-          "Analyze phase transitions using computational models"
+          "Understand basic Python syntax and data types",
+          "Learn about setting variables, for loops, and conditionals",
+          "Write simple scripts in Jupyter notebooks to perform calculations"
         ]
       },
       {
-        "title": "Thermodynamics Fundamentals Lecture",
-        "description": "Introduction to key thermodynamic concepts and their computational implementation",
-        "type": "slides",
-        "url": "https://github.com/your-org/computational-thermodynamics/blob/main/slides/thermo-fundamentals.pdf",
-        "duration": "30 min"
-      },
-      {
-        "title": "Programming Primer for Scientists",
-        "description": "Gentle introduction to Python programming concepts for students with no coding experience",
-        "type": "document",
-        "url": "https://github.com/your-org/computational-thermodynamics/blob/main/programming-primer.md",
-        "duration": "20 min",
-        "objectives": [
-          "Understand basic programming concepts (variables, functions, loops)",
-          "Learn to read and modify simple Python code",
-          "Gain confidence with computational thinking approaches"
-        ]
-      },
-      {
-        "title": "Thermodynamic Data Visualization Tutorial",
-        "description": "Learn to create effective plots and visualizations for thermodynamic data",
+        "title": "Reading Data from a File",
+        "description": "Opening files using open, reading line by line, and searching for a pattern in the file.",
         "type": "notebook",
-        "url": "https://github.com/your-org/computational-thermodynamics/blob/main/visualization-tutorial.ipynb",
-        "duration": "45 min",
-        "objectives": [
-          "Create publication-quality plots of thermodynamic data",
-          "Visualize 3D energy surfaces and phase diagrams",
-          "Interpret computational results through effective graphics"
-        ]
-      },
-      {
-        "title": "Molecular Property Database",
-        "description": "Collection of molecular properties and experimental data for thermodynamic calculations",
-        "type": "dataset",
-        "url": "https://github.com/your-org/computational-thermodynamics/tree/main/data/",
-        "duration": "N/A",
-        "objectives": [
-          "Work with real experimental thermodynamic data",
-          "Compare computational predictions with measured values"
-        ]
-      },
-      {
-        "title": "Statistical Mechanics Connection Video",
-        "description": "Short video explaining the bridge between statistical mechanics and classical thermodynamics",
-        "type": "video",
-        "url": "https://github.com/your-org/computational-thermodynamics/blob/main/videos/statmech-connection.mp4",
-        "duration": "15 min"
-      }
-    ],
-    "scientific_objectives": [
-      "Calculate thermodynamic properties from molecular simulations",
-      "Analyze energy landscapes and relate them to reaction spontaneity",
-      "Apply statistical mechanics principles to predict macroscopic behavior",
-      "Evaluate equilibrium constants using computational methods",
-      "Interpret phase transitions through molecular dynamics simulations"
-    ],
-    "cyberinfrastructure_objectives": [
-      "Implement Monte Carlo simulations for thermodynamic systems",
-      "Use Python libraries for scientific computing (NumPy, SciPy, Matplotlib)",
-      "Visualize high-dimensional data and energy surfaces",
-      "Process and analyze large datasets from molecular simulations",
-      "Develop computational workflows for thermodynamic analysis"
-    ],
-    "scientific_prerequisites": [
-      "General chemistry with thermodynamics coverage",
-      "Calculus I and II",
-      "Basic understanding of probability and statistics"
-    ],
-    "programming_prerequisites": [
-      "No prior programming experience required",
-      "Computational thinking concepts introduced in lesson"
-    ],
-    "platforms": [
-      "Google Colab",
-      "ChemCompute"
-    ],
-    "recommended_platform": "Google Colab",
-    "public_repo_path": "computational-thermodynamics",
-    "instructor_repo_path": "computational-thermodynamics-instructor",
-    "tags": [
-      "thermodynamics",
-      "molecular-simulation",
-      "statistical-mechanics",
-      "computational-chemistry"
-    ],
-    "date_created": "2025-01-12",
-    "date_updated": "2025-01-19",
-    "version": "2.0",
-    "difficulty_level": "Intermediate",
-    "assessment_included": true,
-    "instructor_notes": "Includes guided exercises in computational method development and scientific programming best practices",
-    "id": "thermodynamics-fundamentals"
-  },
-  {
-    "title": "Introduction to Chemical Bonding",
-    "description": "Learn the basics of ionic and covalent bonds, including electron sharing and transfer mechanisms.",
-    "expanded_description": "This comprehensive lesson introduces students to the fundamental principles of chemical bonding, \ncovering both ionic and covalent interactions. Through interactive Jupyter notebook exercises, \nstudents will explore how atoms combine to form compounds and understand the driving forces \nbehind chemical reactions.\n\nThe lesson combines theoretical concepts with computational examples, allowing students to \nvisualize molecular structures and calculate bonding energies using Python libraries. Students \nwill work with real chemical data and learn to interpret bonding patterns across the periodic table.\n",
-    "programming_skill": "Beginner",
-    "primary_course": "General Chemistry",
-    "also_for": [
-      "Physical Chemistry I"
-    ],
-    "instructor": "Dr. Smith",
-    "estimated_time": "3-4 hours total",
-    "format": "Multi-Part Materials Module",
-    "materials": [
-      {
-        "title": "Ionic Bonding Fundamentals",
-        "description": "Introduction to electron transfer, lattice structures, and ionic compound formation",
-        "type": "notebook",
-        "url": "https://github.com/your-org/bonding-module/blob/main/01-ionic-bonding.ipynb",
-        "duration": "45 min",
-        "objectives": [
-          "Understand electron transfer mechanisms in ionic bonding",
-          "Calculate lattice energies using Born-Haber cycles",
-          "Predict ionic compound formation from electronegativity differences"
-        ]
-      },
-      {
-        "title": "Covalent Bonding and Molecular Shapes",
-        "description": "Electron sharing mechanisms, VSEPR theory, and molecular geometry visualization",
-        "type": "notebook",
-        "url": "https://github.com/your-org/bonding-module/blob/main/02-covalent-bonding.ipynb",
+        "url": "https://colab.research.google.com/github/act-cms/foundational-modules/blob/main/intro-programming/colab-notebooks/student/reading_data_files.ipynb",
         "duration": "60 min",
         "objectives": [
-          "Apply VSEPR theory to predict molecular geometry",
-          "Visualize molecular structures using computational tools",
-          "Calculate bond energies and bond lengths"
-        ]
-      },
-      {
-        "title": "Advanced Bonding Theories",
-        "description": "Hybridization, resonance structures, and molecular orbital theory applications",
-        "type": "notebook",
-        "url": "https://github.com/your-org/bonding-module/blob/main/03-advanced-bonding.ipynb",
-        "duration": "75 min",
-        "objectives": [
-          "Determine hybridization states from molecular geometry",
-          "Draw resonance structures and calculate formal charges",
-          "Apply molecular orbital theory to simple molecules"
-        ]
-      },
-      {
-        "title": "Bonding Concepts Review Slides",
-        "description": "Summary presentation covering key bonding principles and computational methods",
-        "type": "slides",
-        "url": "https://github.com/your-org/bonding-module/blob/main/slides/bonding-review.pdf",
-        "duration": "30 min"
-      },
-      {
-        "title": "Practice Problem Set",
-        "description": "Additional exercises for applying bonding concepts to real chemical systems",
-        "type": "document",
-        "url": "https://github.com/your-org/bonding-module/blob/main/practice-problems.pdf",
-        "duration": "45 min",
-        "objectives": [
-          "Apply bonding theories to predict molecular properties",
-          "Solve multi-step problems involving energy calculations"
+          "Open a file and read its contents line by line",
+          "Search for specific patterns in text files",
+          "Extract relevant data from files"
         ]
       }
     ],
     "scientific_objectives": [
-      "Distinguish between ionic and covalent bonding mechanisms",
-      "Predict bond formation based on electronegativity differences",
-      "Calculate lattice energies and bond dissociation energies",
-      "Apply bonding concepts to predict chemical properties",
-      "Interpret molecular geometry using VSEPR theory"
+      "Apply programming concepts to solve basic scientific problems",
+      "Connect programming fundamentals to molecular science applications"
     ],
     "cyberinfrastructure_objectives": [
       "Execute Python code in Jupyter notebook environments",
-      "Visualize molecular structures using RDKit library",
-      "Import and manipulate chemical data with pandas",
-      "Create scientific plots and graphs with matplotlib",
-      "Use computational tools to validate theoretical predictions"
+      "Understand basic programming concepts: variables, loops, conditionals",
+      "Read and process data from files",
+      "Debug simple programming errors",
+      "Develop computational thinking skills for scientific problem-solving"
     ],
     "scientific_prerequisites": [
-      "Basic atomic structure (electrons, protons, neutrons)",
-      "Periodic table organization and trends",
-      "Elementary algebra and graphing"
+      "High school level mathematics",
+      "Basic understanding of scientific concepts"
     ],
     "programming_prerequisites": [
-      "Basic Python syntax (variables, functions)",
-      "Familiarity with Jupyter notebooks",
-      "No advanced programming knowledge required"
+      "No prior programming experience required"
     ],
     "platforms": [
       "Google Colab",
@@ -378,154 +64,17 @@
       "Local Installation"
     ],
     "recommended_platform": "Google Colab",
-    "public_repo_path": "bonding-module",
-    "instructor_repo_path": "bonding-instructor",
+    "public_repo_path": "intro-programming",
+    "instructor_repo_path": "intro-programming-instructor",
     "tags": [
-      "bonding",
-      "molecules",
-      "fundamentals",
-      "chemistry"
+      "introduction",
+      "python",
+      "jupyter",
+      "foundational"
     ],
-    "date_created": "2025-01-15",
-    "date_updated": "2025-01-20",
-    "version": "2.0",
     "difficulty_level": "Introductory",
     "assessment_included": true,
     "instructor_notes": "Includes worked solutions and teaching notes",
-    "id": "intro-chemical-bonding"
-  },
-  {
-    "title": "Molecular Dynamics Simulations: From Algorithm to Analysis",
-    "description": "Build molecular dynamics simulations from scratch and analyze protein folding dynamics using computational methods.",
-    "expanded_description": "This intermediate-level lesson guides students through the implementation and analysis of molecular \ndynamics simulations. Starting with basic integration algorithms, students will build a complete \nMD simulation engine and apply it to study protein conformational dynamics.\n\nStudents will learn to implement force field calculations, integrate equations of motion, and \nanalyze complex trajectory data. The lesson emphasizes both the theoretical foundations of MD \nsimulations and practical computational skills for biomolecular research.\n",
-    "programming_skill": "Intermediate",
-    "primary_course": "Physical Chemistry",
-    "also_for": [
-      "Biochemistry",
-      "Computational Chemistry",
-      "Biophysics"
-    ],
-    "instructor": "Dr. Chen",
-    "estimated_time": "6 hours total",
-    "format": "Multi-Part Materials Module",
-    "materials": [
-      {
-        "title": "MD Fundamentals: Forces and Integration",
-        "description": "Implementing basic MD algorithms, force calculations, and numerical integration schemes",
-        "type": "notebook",
-        "url": "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/01-md-fundamentals.ipynb",
-        "duration": "2 hours",
-        "objectives": [
-          "Implement Verlet and Leapfrog integration algorithms",
-          "Calculate forces using Lennard-Jones and Coulomb potentials",
-          "Understand periodic boundary conditions and minimum image convention",
-          "Optimize computational performance for force calculations"
-        ]
-      },
-      {
-        "title": "Protein Simulation Setup and Execution",
-        "description": "Setting up realistic protein simulations with solvation and periodic boundary conditions",
-        "type": "notebook",
-        "url": "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/02-protein-simulation.ipynb",
-        "duration": "2.5 hours",
-        "objectives": [
-          "Set up protein structures for MD simulation",
-          "Apply AMBER or CHARMM force fields to biomolecules",
-          "Implement explicit solvation and ion placement",
-          "Configure temperature and pressure control algorithms"
-        ]
-      },
-      {
-        "title": "Trajectory Analysis and Visualization",
-        "description": "Analyzing conformational changes, calculating thermodynamic properties, and creating molecular visualizations",
-        "type": "notebook",
-        "url": "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/03-trajectory-analysis.ipynb",
-        "duration": "1.5 hours",
-        "objectives": [
-          "Calculate RMSD, RMSF, and radius of gyration",
-          "Perform principal component analysis on trajectories",
-          "Generate free energy landscapes from simulation data",
-          "Create interactive 3D visualizations with NGLView"
-        ]
-      },
-      {
-        "title": "MD Theory and Methods Lecture",
-        "description": "Comprehensive overview of molecular dynamics theory, algorithms, and applications",
-        "type": "slides",
-        "url": "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/slides/md-theory.pdf",
-        "duration": "45 min"
-      },
-      {
-        "title": "Protein Structure Dataset",
-        "description": "Sample protein structures and pre-computed trajectories for analysis exercises",
-        "type": "dataset",
-        "url": "https://github.com/your-org/molecular-dynamics-tutorial/tree/main/data/",
-        "duration": "N/A",
-        "objectives": [
-          "Work with real experimental protein structures",
-          "Analyze trajectories from published simulations"
-        ]
-      },
-      {
-        "title": "Performance Optimization Guide",
-        "description": "Advanced techniques for optimizing MD simulations on modern hardware",
-        "type": "document",
-        "url": "https://github.com/your-org/molecular-dynamics-tutorial/blob/main/optimization-guide.md",
-        "duration": "30 min",
-        "objectives": [
-          "Understand GPU acceleration techniques",
-          "Implement parallel algorithms for MD simulations",
-          "Profile and optimize computational bottlenecks"
-        ]
-      }
-    ],
-    "scientific_objectives": [
-      "Understand the theoretical basis of molecular dynamics simulations",
-      "Apply force field methods to calculate molecular interactions",
-      "Analyze protein conformational dynamics and folding pathways",
-      "Calculate thermodynamic and kinetic properties from MD trajectories",
-      "Interpret simulation results in the context of experimental observations"
-    ],
-    "cyberinfrastructure_objectives": [
-      "Implement numerical integration algorithms for differential equations",
-      "Optimize computational performance for large-scale simulations",
-      "Manage and analyze large trajectory datasets efficiently",
-      "Create interactive 3D molecular visualizations",
-      "Develop modular, reusable simulation code with proper documentation"
-    ],
-    "scientific_prerequisites": [
-      "Physical chemistry with statistical mechanics",
-      "Basic biochemistry and protein structure",
-      "Calculus III and differential equations",
-      "Classical mechanics fundamentals"
-    ],
-    "programming_prerequisites": [
-      "Solid Python programming skills",
-      "Understanding of NumPy array operations",
-      "Basic knowledge of algorithms and data structures",
-      "Familiarity with scientific computing concepts"
-    ],
-    "platforms": [
-      "Google Colab",
-      "ChemCompute",
-      "Local Installation"
-    ],
-    "recommended_platform": "ChemCompute",
-    "public_repo_path": "molecular-dynamics-tutorial",
-    "instructor_repo_path": "molecular-dynamics-instructor",
-    "tags": [
-      "molecular-dynamics",
-      "simulation",
-      "protein-folding",
-      "computational-biophysics",
-      "algorithms"
-    ],
-    "date_created": "2025-01-08",
-    "date_updated": "2025-01-25",
-    "version": "2.0",
-    "difficulty_level": "Intermediate",
-    "assessment_included": true,
-    "instructor_notes": "Includes performance optimization challenges and extension projects for advanced students",
-    "id": "molecular-dynamics-simulation"
+    "id": "foundational-intro-python"
   }
 ]
