@@ -24,7 +24,7 @@ expanded_description: |
 # Choose ONE: "None", "Beginner", "Intermediate", "Advanced"
 programming_skill: "None"
 
-# Choose ONE: "Foundational Module", "Physical Chemistry", "Organic Chemistry", 
+# Examples: "Foundational Module", "Physical Chemistry", "Organic Chemistry", 
 # "Inorganic Chemistry", "Analytical Chemistry", "Biochemistry", "Materials Science", "Other"
 primary_course: "Foundational Module"
 
@@ -49,7 +49,7 @@ format: "Multi-Part Materials Module"
 materials:
   - title: "Part 1: Introduction"
     description: "Brief description of what this notebook covers"
-    type: "notebook"  # Usually "notebook", could be "document", "dataset", etc.
+    type: "notebook"  # Usually "notebook", could be "slides", "dataset", etc.
     duration: "1 hour"
     
     # REQUIRED: Include at least one URL (preferably both)
@@ -105,7 +105,7 @@ programming_prerequisites:
 platforms:
   - "Google Colab"
   - "Local Installation"
-  # Other options: "ChemCompute", "JupyterHub", "Binder"
+  - "ChemCompute"
 
 # Which platform do you recommend for most users?
 recommended_platform: "Google Colab"
@@ -125,12 +125,3 @@ tags:
   - "visualization"
   - "quantum-chemistry"  # Use appropriate scientific area tags
 
-# OPTIONAL FIELDS
-# Overall difficulty beyond programming skill
-difficulty_level: "Introductory"  # "Introductory", "Intermediate", "Advanced"
-
-# Do you include assessment materials?
-assessment_included: true  # true or false
-
-# Brief note for instructors
-instructor_notes: "Tested in undergraduate physical chemistry course. Students need 2-3 hours."
