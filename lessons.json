@@ -6,7 +6,8 @@
     "programming_skill": "None",
     "primary_course": "Foundational Module",
     "also_for": [
-      "None"
+      "Physical Chemistry",
+      "Materials Science"
     ],
     "authors": [
       "Dr. Jessica A. Nash",
@@ -14,13 +15,17 @@
     ],
     "estimated_time": "2-3 hours",
     "format": "Multi-Part Materials Module",
+    "instructor_email": "instructor-access@university.edu",
+    "instructor_notes": "This introductory module works well as the first programming lesson for students with no coding experience.\n\nTeaching tips:\n- Students often need extra time with the file reading concepts in Part 2\n- Encourage students to experiment with the code examples\n- Common issue: students forget to run cells in order\n",
+    "public_repo_url": "https://github.com/act-cms/foundational-modules",
     "materials": [
       {
         "title": "Introduction to Python",
         "description": "Introduction to Python programming language, basic data types, and operations.",
         "type": "notebook",
-        "colab_url": "https://colab.research.google.com/github/act-cms/foundational-modules/blob/main/intro-programming/colab-notebooks/student/introduction_to_python.ipynb",
         "duration": "1 hour",
+        "github_url": "https://github.com/act-cms/foundational-modules/blob/main/intro-programming/introduction_to_python.ipynb",
+        "colab_url": "https://colab.research.google.com/github/act-cms/foundational-modules/blob/main/intro-programming/colab-notebooks/student/introduction_to_python.ipynb",
         "objectives": [
           "Understand basic Python syntax and data types",
           "Learn about setting variables, for loops, and conditionals",
@@ -31,8 +36,9 @@
         "title": "Reading Data from a File",
         "description": "Opening files using open, reading line by line, and searching for a pattern in the file.",
         "type": "notebook",
+        "duration": "1 hour",
+        "github_url": "https://github.com/act-cms/foundational-modules/blob/main/intro-programming/reading_from_file.ipynb",
         "colab_url": "https://colab.research.google.com/github/act-cms/foundational-modules/blob/main/intro-programming/colab-notebooks/student/reading_from_file.ipynb",
-        "duration": "60 min",
         "objectives": [
           "Open a file and read its contents line by line",
           "Search for specific patterns in text files",
@@ -64,17 +70,14 @@
       "Local Installation"
     ],
     "recommended_platform": "Google Colab",
-    "public_repo_path": "intro-programming",
-    "instructor_repo_path": "intro-programming-instructor",
     "tags": [
       "introduction",
       "python",
       "jupyter",
       "foundational"
     ],
-    "difficulty_level": "Introductory",
-    "assessment_included": true,
-    "instructor_notes": "Includes worked solutions and teaching notes",
-    "id": "foundational-intro-python"
+    "id": "foundational-intro-python",
+    "instructor_repo": "your-org/instructor-materials",
+    "instructor_repo_path": "foundational-intro-python"
   }
 ]
