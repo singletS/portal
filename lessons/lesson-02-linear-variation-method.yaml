@@ -74,7 +74,7 @@ related_modules:
 
 # REPOSITORY URLS (REQUIRED)
 # Link to the repository containing your public material
-public_repo_url: "https://github.com/act-cms/your-lesson-repo"
+public_repo_url: "https://github.com/act-cms/lesson-02-linear-variation-method"
 
 # MATERIALS SECTION (REQUIRED)
 # List each notebook/material in logical order
