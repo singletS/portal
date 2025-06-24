@@ -6,23 +6,18 @@
 
 # BASIC METADATA (REQUIRED)
 # Use a clear, descriptive title that includes the main topic
-title: "Your Lesson Title Here"
+title: "Introduction to the linear variation method"
 
 # Brief description for search results (1-2 sentences)
-description: "Brief description of what students will learn in this lesson."
+description: "In this lesson students implement the linear variation method to calculate approximate solutions to the time-independent Schrodinger equation."
 
 # Longer description for the lesson page (use | for multi-line text)
 expanded_description: |
-  Provide a more detailed description of your lesson here.
-  Explain the context, what students will accomplish, and how this
-  fits into broader molecular science education.
-  
-  You can use multiple paragraphs to fully describe the lesson scope
-  and learning experience.
+In this lesson, students will be introduced to the linear variation method for computing aaproximate solution to the Schrodinger equation. Students will implement the method to solve    
 
 # COURSE INFORMATION (REQUIRED)
 # Choose ONE: "None", "Beginner", "Intermediate", "Advanced"
-programming_skill: "None"
+programming_skill: "Intermediate"
 # None: No programming experience. 
 # Beginner: Knows variables, conditionals, loops
 # Intermediate: Can write their own scripts from scratch
@@ -30,7 +25,7 @@ programming_skill: "None"
 
 # Examples: "Foundational Module", "Physical Chemistry", "Organic Chemistry", 
 # "Inorganic Chemistry", "Analytical Chemistry", "Biochemistry", "Materials Science", "Other"
-primary_course: "Foundational Module"
+primary_course: "Physical Chemistry"
 
 # List other courses where this lesson could be used (optional)
 also_for:
@@ -41,11 +36,11 @@ authors:
   - "Prof. Gergely Gidofalvi"
 
 # Estimated total time for all materials
-estimated_time: "5-6 hours"
+estimated_time: "3 or 6 hours (depending on implementation)"
 
 # Write a description of your module.
 # Single notebook, multi-part module, etc?
-format: "Multi-Part Materials Module"
+format: "Single notebook"
 
 # INSTRUCTOR INFORMATION (OPTIONAL)
 # Contact email for instructor access requests (optional - will use default if not specified)
@@ -55,25 +50,21 @@ instructor_email: "gidofalvi@gonzaga.edu"
 
 # INSTRUCTOR DETAILS (OPTIONAL)
 # What level of students was this piloted with?
-student_level: "Undergraduate - Thirsd Year"  # e.g., "Graduate", "Undergraduate - First Year", "Mixed Graduate/Undergraduate"
+student_level: "Undergraduate - Third Year"  # e.g., "Graduate", "Undergraduate - First Year", "Mixed Graduate/Undergraduate"
 # How many students has this been tested with?
 students_piloted: 20  # Number of students
 # Free-form notes for instructors
 instructor_notes: |
   Additional context for instructors using this lesson:
   
-  - This lesson introduces students
-  - Students often struggle with the concept of periodic boundary conditions in Part 2
-  - The visualization exercises are very engaging - allow extra time for exploration
-  - Consider assigning the dataset analysis as homework rather than in-class work
+  - text
   
   Timing notes:
-  - Part 1 typically takes students 45-60 minutes
-  - Part 2 can be rushed in 90 minutes but is better with 2 hours
+  - At the beginning of the lesson, the instructor is encouraged to spend review the key steps of applying the method (section 3 of notebook)  
+  - A three hour live coding session should provide enough time for the instructor to demonstrate 1) the application of the method, 2) use of SciPy functions for numerical integration and linear algebra, and 3) code design and debugging. A useful example could be a particle confined to an infinite well with a raised floor in the right half of the box. Approximately 2.5 hours for this would be appropriate. 
+  - Students are then asked to write their own code to obtain approximate solutions for a modified infinite well potential with a bump in the middle of the well. This can be assigned as a homework or students can work on this in the lab. 
   
   Common student questions:
-  - "Why do we need so many time steps?" - good opportunity to discuss numerical integration
-  - "What happens if we change the temperature?" - this connects well to thermodynamics concepts
 
 # Related lessons that complement this one
 related_modules:
