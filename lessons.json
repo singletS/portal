@@ -139,6 +139,74 @@
     "instructor_repo_path": "molecular-representations"
   },
   {
+    "title": "Diffusion from the Atomistic to Continuum Scale",
+    "description": "Explore ways to measure and model diffusion computationally, starting with molecular dynamics in a web app and then moving to a Fickian continuum description.",
+    "expanded_description": "Explore diffusion at multiple lengthscales, no coding experience required! \nStudents will start by collecting their \"experimental\" data using a 2D molecular dynamics (MD) web app and \nby stepping through this notebook, will see how one can extract a diffusivity from mean squared displacement\nacross particles. \n\nNext, they will connect this to the continuum (Fick's Laws) description and investigate how the intuitive notion\nof diffusion (how material \"spreads out\") connects to the atomistic picture from Brownian motion.\n\nAlong the way, there are prompts to reflect on both the conceptual content as well as the complementarity between\nthe experimental and computational paradigms.\n",
+    "programming_skill": "None",
+    "primary_course": "Materials Science",
+    "also_for": [
+      "Physical Chemistry"
+    ],
+    "authors": [
+      "Prof. Rachel C. Kurchin"
+    ],
+    "estimated_time": "2-3 hours",
+    "format": "Single notebook",
+    "instructor_email": "rkurchin@cmu.edu",
+    "student_level": "Undergraduate - First Year",
+    "students_piloted": 30,
+    "instructor_notes": "Additional context for instructors using this lesson:\n\nThis activity is designed as a lab activity to expose students to some techniques and capabilities of\ncomputational materials science with no programming prerequisites. That is, all they have to do with this\nJupyter notebook is run existing cells of code and in some cases paste in data or change one number. My goals\nwere to get the students thinking about how computation as a paradigm is distinct from pure theory and can \ncomplement both theory and experiment, e.g. by probing scales of length and time inaccessible in a physical\nlab, or through massive replication through automation.\n\nWhen I piloted this activity (in Carnegie Mellon's introductory materials science course), it was \nactually before they had seen anything about diffusion in the associated lecture. I think it could work well\nin either scenario, though, it would just affect how technical one should expect the students to get in their\nresponses to the reflection prompts, and also what context would be needed in the prelab mini-lecture. My pilot\naudience was also extremely heterogeneous in programming background, some first-year undergraduates with \nessentially no experience, and some more senior computer science students, and it worked just fine.\n\nFor my course, the deliverable was a standard lab memo that included responses to the reflection prompts within\nthe notebook, as well as this additional prompt: \"Please also write at least a few sentences reflecting on \ncomputation as an \"experimental\" paradigm generally. How do you see it as similar to or different from \nexperiments? What can we learn about diffusion more easily from one approach compared to the other?\"\n\nLogistical tips, and things to emphasize in prelab mini-lecture:\n- Demonstrate launching the notebook in chosen platform (I suggest ChemCompute), including setting the correct runtime!\n- Demonstrate using the online MD tool and getting the density up high enough (easiest technique is to use the \"freeze\" button and then drag the number slider up repeatedly)\n- Since the first two setup cells to install and import packages will take a few minutes to run, try to make sure students get those going first and then start reading and exploring the MD engine, etc.\n\nSome student \"gotchas\" I ran into a few times:\n- Not setting the correct runtime (e.g. they're in Python instead of Julia) so none of the code runs\n- Not evaluating the cells after pasting their data in\n- Data formatting issues due to either not pasting in the full contents of the data dump, resetting stats during data collection, etc.\n\nPossibilities to \"level up\" this activity for more advanced students:\n- Connect to 2D Lennard-Jones phase diagram (conditions here are in the two-phase solid-liquid region!) and thinking about why solid ends up in middle of box and liquid along the edges (see e.g. https://www.researchgate.net/publication/49750821/figure/fig1/AS:667216336936969@1536088179352/Phase-diagram-of-2D-Lennard-Jones-solid-as-given-in-9-The-first-order-boundaries-are.png) \n- \"Skeletonize\" some of the code cells and ask students to fill in some of the analysis or visualization themselves\n- Get more in-depth into what's going on with the MD, understand why temperature drifts, etc.\n- Have them repeat the second portion at another temperature and think about how/why the results change\n- Dive more into some of the PDE stuff at the end\n",
+    "public_repo_url": "https://github.com/rkurchin/27100_diffusion_computational_lab",
+    "materials": [
+      {
+        "title": "Diffusion Computational Lab",
+        "description": "Explore diffusion computationally at atomistic and continuum lengthscales.",
+        "type": "notebook",
+        "duration": "2-3 hours",
+        "github_url": "https://github.com/rkurchin/27100_diffusion_computational_lab/blob/main/diffusion_computational_lab.ipynb",
+        "colab_url": "https://colab.research.google.com/github/rkurchin/27100_diffusion_computational_lab/blob/main/colab/diffusion_computational_lab_colab.ipynb",
+        "objectives": [
+          "Understand how we measure and model diffusion computationally at both atomistic and continuum scales",
+          "Consider complementarity between computational and experimental paradigms"
+        ]
+      }
+    ],
+    "scientific_objectives": [
+      "Observe diffusive processes in an atomistic simulation",
+      "Explain how we can compute a diffusivity from the slope of MSD vs. time",
+      "Connect these atomistic mechanisms to the continuum (Fickian) description"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Handle tabular data",
+      "Interact with a literate programming environment (Jupyter)",
+      "Interpret parameters from a model fit",
+      "Consider complementarity between computational and experimental paradigms"
+    ],
+    "scientific_prerequisites": [
+      "High school chemistry/physics",
+      "High school algebra/precalc"
+    ],
+    "programming_prerequisites": [
+      "No prior programming experience required"
+    ],
+    "platforms": [
+      "ChemCompute",
+      "Google Colab",
+      "Local Installation"
+    ],
+    "recommended_platform": "ChemCompute",
+    "tags": [
+      "julia",
+      "molecular-dynamics",
+      "visualization",
+      "diffusion",
+      "materials-science"
+    ],
+    "id": "diffusion",
+    "instructor_repo": "act-cms/instructor-materials",
+    "instructor_repo_path": "diffusion"
+  },
+  {
     "title": "Introduction to Programming for Molecular Scientists",
     "description": "Learn fundamental programming concepts in Python including data types, file operations, and basic programming structures.",
     "expanded_description": "This foundational module introduces students to programming concepts essential for computational molecular science. \nStudents will learn Python basics including variables, data types, control structures, and file operations through \nhands-on exercises designed for scientific applications.\n\nThe module emphasizes practical programming skills that serve as prerequisites for more advanced computational \nlessons in chemistry and molecular sciences.\n",
