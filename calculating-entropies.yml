@@ -72,7 +72,7 @@ related_modules:
 
 # REPOSITORY URLS (REQUIRED)
 # Link to the repository containing your public material
-public_repo_url: "https://github.com/act-cms/beginner-calculating-entropies"
+public_repo_url: "https://github.com/act-cms/calculating-entropies"
 
 # MATERIALS SECTION (REQUIRED)
 # List each notebook/material in logical order
@@ -84,7 +84,7 @@ materials:
     
     # REQUIRED: Include at least one URL (preferably both)
     # Direct link to notebook file on GitHub
-    github_url: "https://github.com/act-cms/beginner-calculating-entropy/blob/main/calculating-entropy.ipynb"
+    github_url: "https://github.com/act-cms/calculating-entropies/blob/main/01-entropy-single-phase/calculating-entropyorg.ipynb"
     # Google Colab launch link (recommended for accessibility)
     #colab_url: "https://colab.research.google.com/github/act-cms/your-lesson-repo/blob/main/colab-notebooks/01-intro.ipynb"
     
