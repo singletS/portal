@@ -59,9 +59,9 @@ students_piloted: 20  # Number of students
 instructor_notes: |
   Additional context for instructors using this lesson:
   
-	- If needed, lesson-01-introduction-to-programming-and-python introduces students to basic programming concepts (loops, conditional statements, user-defined functions), data types (scalars, strings, vectors, and matrices), and built-in Python libraries and functions for numerical integration, curve fitting, plotting.  
-	- To demonstrate the implementation of the linear variational method, it is recommended that the instructor lead a live coding session using the notebook for part 1. See approximate timing below.
-	- After the live coding session students should be ready to tackle the assignment outlined in the notebook for part 2. The assignment includes using the linear variation method to compute approximate solutions for a double-well potential and to examine properties of the ground state solution. 
+  - If needed, lesson-01-introduction-to-programming-and-python introduces students to basic programming concepts (loops, conditional statements, user-defined functions), data types (scalars, strings, vectors, and matrices), and built-in Python libraries and functions for numerical integration, curve fitting, plotting.  
+  - To demonstrate the implementation of the linear variational method, it is recommended that the instructor lead a live coding session using the notebook for part 1. See approximate timing below.
+  - After the live coding session students should be ready to tackle the assignment outlined in the notebook for part 2. The assignment includes using the linear variation method to compute approximate solutions for a double-well potential and to examine properties of the ground state solution. 
   
   Timing notes:
   - At the beginning of the live coding session, the instructor is encouraged to spend time reviewing the key steps of applying the method (section 3 of notebook) and highlight elements of code design.  
@@ -70,9 +70,9 @@ instructor_notes: |
   
   Common student questions:
 
-	- "Students need several reminders related to the use of functions"
-	- "Students, especially those with no linear algebra background, often have questions related to diagonalization and how it is equivalent to finding the optimal coefficients in the wave function expansion (the appendix addresses this)"
-	- "Students often get confused between the quantum number index and the matrix index due to the zero offset in Python when building the matrix representation of the Hamiltonian"
+  - "Students need several reminders related to the use of functions"
+  - "Students, especially those with no linear algebra background, often have questions related to diagonalization and how it is equivalent to finding the optimal coefficients in the wave function expansion (the appendix addresses this)"
+  - "Students often get confused between the quantum number index and the matrix index due to the zero offset in Python when building the matrix representation of the Hamiltonian"
 
 # Related lessons that complement this one
 related_modules:
@@ -115,7 +115,7 @@ materials:
 scientific_objectives:
   - "Describe the key aspects of the linear variational method" 
   - "Apply the linear variational method to obtain approximate solutions to the time-independent Schrodinger equation"
-	- "Explore dependence of tunneling probability on particle mass"
+  - "Explore dependence of tunneling probability on particle mass"
   - "Explain the cost to benefit ratio of accuracy versus computational complexity"
 
 # What computational/programming skills will students develop?
@@ -149,7 +149,7 @@ recommended_platform: "ChemCompute"
 tags:
   - "python"
   - "approximation techniques"
-	- "linear variational method"
-	- "particle in a box"
-	- "double-well potential"
+  - "linear variational method"
+  - "particle in a box" 
+  - "double-well potential"
   - "quantum-chemistry"  # Use appropriate scientific area tags
