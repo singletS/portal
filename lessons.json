@@ -286,5 +286,115 @@
     "id": "foundational-intro-python",
     "instructor_repo": "act-cms/instructor-materials",
     "instructor_repo_path": "foundational-intro-python"
+  },
+  {
+    "title": "Introduction to Python using NMR data for a first year, graduate level course",
+    "description": "Students are introduced to the use of Python to perform cheminformatics, \nanalyze NMR data and generate visualizations for data.\n",
+    "expanded_description": "Four notebooks cover applications chemistry graduate students might need to utilize Python for routine\nanalysis of chemical structures using rdkit, processing NMR data for reaction kinetics and nuclear\nspin relaxation data, and to plot data/results. Applicable for organic, inorganic and polymer chemists \nwith little to no programming experience. Students will leave with the ability to load their own data, \nutilize published Python packages and create plots of the resultant information/data.\n\nThe material was introduced along with general NMR lectures covering introduction to NMR Physics, chemical shifts, \nspin-spin coupling, relaxation mechanisms, 1D and 2D pulse sequences and processing NMR data. Students are encouraged \nto work in teams for various questions posed in class as well as structural assignment problems. \n  \n",
+    "programming_skill": "None",
+    "primary_course": "Foundational Module",
+    "also_for": [
+      "Organic Chemistry",
+      "Inorganic Science",
+      "Other"
+    ],
+    "authors": [
+      "Dr. Seth Veenbaas",
+      "Prof. Marc ter Horst"
+    ],
+    "estimated_time": "4 hours",
+    "format": "Multi-Part Materials Module",
+    "instructor_email": "terhorst@unc.edu",
+    "student_level": "Mixed Graduate/Undergraduate",
+    "students_piloted": 25,
+    "instructor_notes": "Additional context for instructors using this lesson:\n\n- This lesson works well when paired with instruction on NMR Spectroscopy for synthetic chemists\n- Take extra time with the first two notebooks for students new to Python programming\n- Homework is designed to show evidence students have gone through the notebooks (not to test skill development)\n\nTiming notes:\n- Part 1 (Day 0 , Python Essentials) is relatively quick and can be covered in a few minutes at the beginning of the course\n- Other parts are covered during a 45 minute class period, one per week\n- Advanced students are encouraged to work with people new to programming\n\nCommon student questions:\n- \"Why do we need Python for NMR?\"\n- \"I don't know what some of these error messages mean or how to address them.\"\n",
+    "related_modules": [
+      "computational-chemistry-basics"
+    ],
+    "public_repo_url": "https://github.com/act-cms/python-for-nmr",
+    "materials": [
+      {
+        "title": "Part 1: Python essentials",
+        "description": "Brief description of what this notebook covers",
+        "type": "notebook",
+        "duration": "30 minutes",
+        "github_url": "https://github.com/act-cms/python-for-nmr/blob/main/0-python-essentials/Day0_python_essentials.ipynb",
+        "objectives": [
+          "Open a Jupyter notebook",
+          "Python logic statements, for loops, Python lists"
+        ]
+      },
+      {
+        "title": "Part 2: Introduction to cheminformatics",
+        "description": "Using SMILES strings to work with rdkit",
+        "type": "notebook",
+        "duration": "50 min",
+        "github_url": "https://github.com/act-cms/python-for-nmr/blob/main/1-intro-to-cheminformatics/Day1_rdkit.ipynb",
+        "objectives": [
+          "Use SMILES strings",
+          "Learn how to import packages/libraries.",
+          "Use rdkit library to draw and characterize molecules.",
+          "Learn how to get help with tab complete and the help() function."
+        ]
+      },
+      {
+        "title": "Part 3: NMR Kinetics",
+        "description": "Using Python to determine a rate constant from integrals of NMR data",
+        "type": "notebook",
+        "duration": "50 min",
+        "github_url": "https://github.com/act-cms/python-for-nmr/blob/main/2-nmr-kinetics/Day2_NMR_kinetics.ipynb",
+        "objectives": [
+          "Use pandas and scipy to load and analyze NMR kinetics data.",
+          "Determine the reaction order and rate constant (k) from NMR reaction monitoring data."
+        ]
+      },
+      {
+        "title": "Part 4: NMR Spin Relaxation",
+        "description": "Using Python to determine a nuclear spin relaxation times (T1) from integrals of inversion recovery data",
+        "type": "notebook",
+        "duration": "50 min",
+        "github_url": "https://github.com/act-cms/python-for-nmr/blob/main/2-nmr-kinetics/Day2_NMR_kinetics.ipynb",
+        "objectives": [
+          "Use pandas and scipy to load and analyze NMR kinetics data.",
+          "Determine the reaction order and rate constant (k) from NMR reaction monitoring data."
+        ]
+      }
+    ],
+    "scientific_objectives": [
+      "Apply Python programming to analyze NMR data",
+      "Determine reaction rates from NMR data",
+      "Determine nuclear spin-lattice relaxation from NMR data"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Use basic Python programming to work with a molecular database",
+      "Write and execute Python code in Jupyter notebooks",
+      "Use Python packages to fit and display data",
+      "Create visualizations of NMR data",
+      "Debug common programming errors"
+    ],
+    "scientific_prerequisites": [
+      "General chemistry",
+      "Organic Chemistry",
+      "Understanding of molecular structure",
+      "Experience with proton, one-dimensional NMR spectra"
+    ],
+    "programming_prerequisites": [
+      "No prior programming experience required"
+    ],
+    "platforms": [
+      "ChemCompute",
+      "Local Installation"
+    ],
+    "recommended_platform": "ChemCompute",
+    "tags": [
+      "python",
+      "NMR",
+      "NMR Spectroscopy",
+      "visualization",
+      "reaction rate"
+    ],
+    "id": "python-for-nmr",
+    "instructor_repo": "act-cms/instructor-materials",
+    "instructor_repo_path": "python-for-nmr"
   }
 ]
