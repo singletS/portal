@@ -1,5 +1,88 @@
 [
   {
+    "title": "Basic Tasks Using a Jupyter Notebook with Code in Python for Analytical Chemistry Data Analysis",
+    "description": "Generate code in Python to perform four basic tasks: Basic calculations; Entering data into NumPy arrays; Fitting data in NumPy arrays to a NumPy or SciPy nonlinear model function; Creating a Matplotlib graph of data in NumPy arrays and of a nonlinear model function.",
+    "expanded_description": "This lesson can be used as an introduction to Analytical Chemistry Data Analysis tasks in Python.\nThe suggested context would be to walk through it together during the first week of Analytical Laboratory.\nAbout 45 minutes to an hour should be allocated to this lesson; an hour is best.\n",
+    "programming_skill": "None",
+    "primary_course": "Analytical Chemistry",
+    "also_for": [
+      "Instrumental Analysis",
+      "Physical Chemistry"
+    ],
+    "authors": [
+      "Dr. Christine Morales"
+    ],
+    "instructor_email": "moralech@mountunion.edu",
+    "student_level": "Undergraduate - Second Year",
+    "students_piloted": 10,
+    "instructor_notes": "This introductory module works well as the first programming lesson for students with no coding experience.\n\nTeaching tips:\n- Students should work together in groups to ensure they are accountable to understand each part.\n- Encourage students to share ideas but code/answer questions in their own copy of the notebook.\n- Remind students to save their own copy before they begin work.\n- Some students may have several Google accounts; remind them to be aware of which account is logged in when they save.\n- Students are asked to copy/paste the **editable plain text**; Colab preview mode uses a different character set.\n- If you do not have a full hour available in lab, consider scheduling an out-of-class help session for the Major Challenge.\n- Please edit the last Markdown cell to reflect your own policies for turning in assignments.\n- If you accept links to student copies of Jupyter notebooks instead of the actual .ipynb files, students may change the file until you grade it.  If using nbgrader, you could set it up to run when the assignment is due.\n- If you require students to download their completed Jupyter notebooks, students should download the .ipynb file and turn it in.\n\nCommon student questions:\n- These files are called \"Juypter notebooks,\" but students may also have \"laboratory notebooks\" that need to be turned in separately.  Clarify which is which.\n- Students may ask which file format to download.  They should download the .ipynb file of their completed notebook.\n",
+    "related_modules": [
+      "calibration-of-glassware",
+      "statistical-testing-beta",
+      "solution-preparation-spectrophotometry",
+      "standard-addition-spectophotometry",
+      "ocean-acidification",
+      "buffer-solutions",
+      "hplc-analysis",
+      "gc-ms-internal-standard"
+    ],
+    "estimated_time": "1 hour",
+    "format": "Single Notebook",
+    "materials": [
+      {
+        "title": "Basic Tasks using a Jupyter Notebook with Code in Python",
+        "description": "This Jupyter notebook can be used to generate code in Python to perform four basic tasks: Basic calculations; Entering data into NumPy arrays; Fitting data in NumPy arrays to a NumPy or SciPy nonlinear model function; Creating a Matplotlib graph of data in NumPy arrays and of a nonlinear model function.",
+        "type": "notebook",
+        "duration": "1 hour",
+        "github_url": "https://github.com/act-cms/moralech-umu-basic-tasks/blob/main/Basic_Tasks_Student_Version.ipynb",
+        "colab_url": "https://colab.research.google.com/github/act-cms/moralech-umu-basic-tasks/blob/main/Basic_Tasks_Student_Version.ipynb",
+        "objectives": [
+          "Content: Recognize and report significant figures",
+          "Content: Convert between mass in grams and amount in moles",
+          "Content: Explain periodic trends in molar masses",
+          "Process: Use Python code to define values and functions, and to perform calculations",
+          "Process: Use Python code to report the output of calculations in a specified format",
+          "Process: Use Python code to fit data to a model, and report the fitted model",
+          "Process: Use Python code to plot data with a model, and display the plot in a specified format"
+        ]
+      }
+    ],
+    "scientific_objectives": [
+      "Recognize and report significant figures",
+      "Convert between mass in grams and amount in moles",
+      "Explain periodic trends in molar masses"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Use Python code to define values and functions, and to perform calculations",
+      "Use Python code to report the output of calculations in a specified format",
+      "Use Python code to fit data to a model, and report the fitted model",
+      "Use Python code to plot data with a model, and display the plot in a specified format"
+    ],
+    "scientific_prerequisites": [
+      "Significant Figures",
+      "Moles and Molar Masses",
+      "Periodic Table"
+    ],
+    "programming_prerequisites": [
+      "No prior programming experience required"
+    ],
+    "platforms": [
+      "Google Colab"
+    ],
+    "recommended_platform": "Google Colab",
+    "public_repo_url": "https://github.com/act-cms/moralech-umu-basic-tasks",
+    "instructor_materials_url": "https://github.com/act-cms/instructor-materials/raw/main/moralech-umu-basic-tasks/Basic-Tasks.zip",
+    "tags": [
+      "python",
+      "analytical-chemistry",
+      "laboratory",
+      "data-analysis"
+    ],
+    "id": "moralech-umu-basic-tasks",
+    "instructor_repo": "act-cms/instructor-materials",
+    "instructor_repo_path": "moralech-umu-basic-tasks"
+  },
+  {
     "title": "Bridging Basic Chemistry and Cheminformatics: A Jupyter-based Module on Molecular Representation for Introductory Chemistry",
     "description": "Students will learn how molecules are represented computationally and apply programming concepts to analyze and visualize molecular structures using Jupyter notebooks. The lesson builds foundational skills in cheminformatics and computational thinking for molecular science.",
     "expanded_description": "This lesson introduces students to the fundamental ways molecules are represented in computational chemistry and cheminformatics, with a focus on practical skills using Jupyter notebooks. Students will explore how chemical structures are encoded as data (e.g., SMILES, InChI, and molecular graphs), and learn to manipulate and visualize these representations using Python.\n\nDesigned for introductory chemistry students with beginner programming experience, the module bridges core chemical concepts with modern computational tools. Through hands-on activities, students will gain experience reading, interpreting, and generating molecular representations, and will use open-source libraries to analyze and visualize molecular structures.\n\nBy the end of the lesson, students will understand the importance of molecular representations in computational science, be able to apply basic programming to chemical problems, and develop foundational skills for further study in cheminformatics and molecular modeling. This lesson supports the integration of computational thinking into general chemistry curricula and prepares students for more advanced topics in molecular science.\n",
@@ -219,6 +302,87 @@
     "id": "chemiluminescence-of-bleach",
     "instructor_repo": "act-cms/instructor-materials",
     "instructor_repo_path": "chemiluminescence-of-bleach"
+  },
+  {
+    "title": "Calibration of Glassware",
+    "description": "Data analysis for a Calibration of Glassware Experiment in Analytical Chemistry Laboratory.",
+    "expanded_description": "This lesson can be used to analyze glassware calibration data collected by students in an analytical chemistry laboratory.\nThe suggested context would be to walk through it together during the second week of Analytical Laboratory.\nAbout a half hour to an hour should be allocated in lab to this lesson.\n",
+    "programming_skill": "None",
+    "primary_course": "Analytical Chemistry",
+    "also_for": [
+      "General Chemistry",
+      "Physical Chemistry"
+    ],
+    "authors": [
+      "Dr. Christine Morales"
+    ],
+    "estimated_time": "1 hour or less",
+    "format": "Single Notebook",
+    "instructor_email": "moralech@mountunion.edu",
+    "student_level": "Undergraduate - Second Year",
+    "students_piloted": 10,
+    "instructor_notes": "This introductory module works well as a second programming lesson for students with no coding experience.\n\nTeaching tips:\n- If your students have already done Basic Tasks and you have time, consider providing less sample code for data entry in Tasks 1 and 3.  \n- If you do not provide sample code for data entry in Tasks 1 and 3, consider prompting students to copy Numpy array data entry syntax from Basic Tasks.\n- In Task 2, the detailed formatting settings for the graph are intended to demonstrate creation of publication-quality figures, \n  for example the buret calibration graph in the Calibrating Volumetric Glassware experiment from the Quantitative Chemical Analysis textbook by Daniel C. Harris.\n- Students should work together in groups to ensure they are accountable to understand each part.\n- Encourage students to share ideas but code/answer questions in their own copy of the notebook.\n- Remind students to save their own copy before they begin work.\n- Some students may have several Google accounts; remind them to be aware of which account is logged in when they save.\n- If you do not have a full hour available in lab, consider omitting Part 4.\n- In Task 4, glassware tolerance tables are displayed as drop-down widgets.  These are not printable.  \n  If you need students to generate printable tables, consider using formatted print statments or Pandas dataframes.\n\nTiming notes:\n- Task 1 typically takes students 10-15 minutes when sample code is provided.  Add 5 minutes if prompting students to copy Numpy syntax from Basic Tasks.\n- Task 2 typically takes students 5-10 minutes.  Show students how to save and print the graph to tape into their lab notebook.\n- Task 3 typically takes students 10-15 minutes when sample code is provided.  Add 5 minutes if prompting students to copy Numpy syntax from Basic Tasks.\n- Task 4 typically takes students 5-10 minutes.  Consider omitting Task 4 if time is tight.\n\nCommon student questions:\n- Students may ask if they need to tape the graph into their laboratory notebook before turning it in.\n- Students may ask if they need to print the glassware tolerance widgets; this is not feasible.\n",
+    "related_modules": [
+      "moralech-umu-basic-tasks",
+      "statistical-testing-beta",
+      "solution-preparation-spectrophotometry",
+      "standard-addition-spectophotometry",
+      "ocean-acidification",
+      "buffer-solutions",
+      "hplc-analysis",
+      "gc-ms-internal-standard"
+    ],
+    "public_repo_url": "https://github.com/act-cms/moralech-umu-public-calibration-of-glassware",
+    "materials": [
+      {
+        "title": "Calibration of Glassware",
+        "description": "Generate code in Python to perform four tasks: Entering and processing data as an array; Creating a publication-quality graph; Reporting results to correct significant figures; Creating and using a lookup table widget.",
+        "type": "notebook",
+        "duration": "1 hour",
+        "github_url": "https://github.com/act-cms/moralech-umu-public-calibration-of-glassware/blob/main/Calibration_of_Glassware_Student_Version.ipynb",
+        "colab_url": "https://colab.research.google.com/github/act-cms/moralech-umu-public-calibration-of-glassware/blob/main/Calibration_of_Glassware_Student_Version.ipynb",
+        "objectives": [
+          "Content: Use a water density table to convert between mass and volume",
+          "Content: Use tolerance data to understand the range of random error",
+          "Content: Use calibration data to correct for systematic error",
+          "Process: Use Python code to enter data into arrays",
+          "Process: Use Python code to perform array calculations",
+          "Process: Use Python code to display data in graphs or drop-down menus"
+        ]
+      }
+    ],
+    "scientific_objectives": [
+      "Use a water density table to convert between mass and volume",
+      "Use tolerance data to understand the range of random error",
+      "Use calibration data to correct for systematic error"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Use Python code to enter data into arrays",
+      "Use Python code to perform array calculations",
+      "Use Python code to display data in graphs or drop-down menus"
+    ],
+    "scientific_prerequisites": [
+      "Types of Glassware",
+      "Types and Sources of Error"
+    ],
+    "programming_prerequisites": [
+      "No prior programming experience required"
+    ],
+    "platforms": [
+      "Google Colab",
+      "Local Installation",
+      "ChemCompute"
+    ],
+    "recommended_platform": "Google Colab",
+    "tags": [
+      "python",
+      "analytical-chemistry",
+      "laboratory",
+      "data-analysis"
+    ],
+    "id": "calibration-of-glassware",
+    "instructor_repo": "act-cms/instructor-materials",
+    "instructor_repo_path": "calibration-of-glassware"
   },
   {
     "title": "Diffusion from the Atomistic to Continuum Scale",
@@ -623,5 +787,164 @@
     "id": "lesson-02-linear-variation-method",
     "instructor_repo": "act-cms/instructor-materials",
     "instructor_repo_path": "lesson-02-linear-variation-method"
+  },
+  {
+    "title": "Solution Preparation and Spectrophotometry",
+    "description": "Data analysis for a Solution Preparation and Spectrophotometry Experiment in Analytical Chemistry Laboratory.",
+    "expanded_description": "This lesson can be used to analyze solution preparation and spectrophotometry data collected by students in an analytical chemistry laboratory.\nThe suggested context would be to walk through it together during the corresponding Analytical Laboratory experiment.\nAbout a half hour to an hour should be allocated in lab to this lesson, after data collection is complete.\n\nYou can use multiple paragraphs to fully describe the lesson scope\nand learning experience.\n",
+    "programming_skill": "None",
+    "primary_course": "Analytical Chemistry",
+    "also_for": [
+      "Physical Chemistry",
+      "General Chemistry"
+    ],
+    "authors": [
+      "Dr. Christine Morales"
+    ],
+    "estimated_time": "1 hour or less",
+    "format": "Single Notebook",
+    "instructor_email": "moralech@mountunion.edu",
+    "student_level": "Undergraduate - Second Year",
+    "students_piloted": 10,
+    "instructor_notes": "This introductory module works well as an early (second or third) programming lesson for students with no prior coding experience.\n\nTeaching tips:\n- If your students have already done Basic Tasks and you have time, consider providing less sample code for data entry in Task 1.  \n- If you do not provide sample code for data entry in Task 1, consider prompting students to copy Numpy array data entry syntax from Basic Tasks.\n- If your students took more than one replicate absorbance measurement of each stock concentration (k > 2 in Task 4), \n  the commented-out sample code in the student version of the notebook is a very simple way to just allow them to enter all their data.\n  Error bars displayed in Task 3 will be overestimated in this simple approach, as they will only include data from one replicate.  \n  A more advanced approach is possible: students could enter all values into the same array, and also enter the stock concentrations\n  multiple times into the corresponding array. Students would then need to type in their own value of N rather than rely on a length function.\n- Instructors may choose to point out the vast features of SciPy, which also will be used in more advanced calculations in other modules.\n- It is possible to expand Task 3 if you want to use this as a deeper tutorial on graphing with Matplotlib.\n- Students should work together in groups to ensure they are accountable to understand each part.\n- Encourage students to share ideas but code/answer questions in their own copy of the notebook.\n- Remind students to save their own copy before they begin work.\n- Some students may have several Google accounts; remind them to be aware of which account is logged in when they save.\n\nTiming notes:\n- Task 1 typically takes students 10-15 minutes when sample code is provided.  Add 5 minutes if prompting students to copy Numpy syntax from Basic Tasks.\n- Task 2 typically takes students 5-10 minutes.\n- Task 3 typically takes students 10-15 minutes.   Remind students how to save and print the graph to tape into their lab notebook.\n- Task 4 typically takes students 5-10 minutes.  \n\nCommon student questions:\n- Students may ask how to enter multiple replicate measurements.  Consider making a plan for this before the start of lab.\n- Students may ask if they need to tape the graph into their laboratory notebook before turning it in\n",
+    "related_modules": [
+      "moralech-umu-basic-tasks",
+      "statistical-testing-beta",
+      "calibration-of-glassware",
+      "standard-addition-spectophotometry",
+      "ocean-acidification",
+      "buffer-solutions",
+      "hplc-analysis",
+      "gc-ms-internal-standard"
+    ],
+    "public_repo_url": "https://github.com/act-cms/solution-preparation-spectrophotometry",
+    "materials": [
+      {
+        "title": "Solution Preparation and Spectrophotometry",
+        "description": "This notebook can be used to generate code in Python to perform four tasks: Input dependent and independent variables into arrays; Use SciPy to fit data to a linear model with uncertainty; Use Matplotlib to generate a calibration curve; Use a linear best-fit model with uncertainty to find concentration and propagated uncertainty.",
+        "type": "notebook",
+        "duration": "1 hour or less",
+        "github_url": "https://github.com/act-cms/solution-preparation-spectrophotometry/blob/main/Solution_Preparation_Student_Version.ipynb",
+        "colab_url": "https://colab.research.google.com/github/act-cms/solution-preparation-spectrophotometry/blob/main/colab-notebooks/Solution_Preparation_Student_Version.ipynb",
+        "objectives": [
+          "Content: Explain calibration and analysis for spectrophotometric data",
+          "Content: Use a calibration curve to find the concentration of an analyte in solution",
+          "Process: Use Python code to transform data using structures such as arrays",
+          "Process: Use Python code to visualize data using different types of graphs"
+        ]
+      }
+    ],
+    "scientific_objectives": [
+      "Explain calibration and analysis for spectrophotometric data",
+      "Use a calibration curve to find the concentration of an analyte in solution"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Use Python code to transform data using structures such as arrays",
+      "Use Python code to visualize data using different types of graphs"
+    ],
+    "scientific_prerequisites": [
+      "General Chemistry",
+      "Familiarity with data sets that can be fit to a *model*, such as a linear calibration curve"
+    ],
+    "programming_prerequisites": [
+      "Familiarity with *arrays*"
+    ],
+    "platforms": [
+      "Google Colab",
+      "Local Installation",
+      "ChemCompute"
+    ],
+    "recommended_platform": "Google Colab",
+    "tags": [
+      "python",
+      "analytical-chemistry",
+      "laboratory",
+      "data-analysis"
+    ],
+    "id": "solution-preparation-spectrophotometry",
+    "instructor_repo": "act-cms/instructor-materials",
+    "instructor_repo_path": "solution-preparation-spectrophotometry"
+  },
+  {
+    "title": "Statistical Testing, or How Heavy is that Penny?",
+    "description": "Generate code in Python to perform six tasks for statistical analysis: Upload multiple datasets from CSV files; Reorganize and summarize data; Recognize and address outliers; Apply Student's T test; Perform linear least-squares with propagation of uncertainty; Build and plot histograms.",
+    "expanded_description": "This lesson can be used as an introduction to Analytical Chemistry Statistical Analysis tasks in Python.\nThe suggested context would be to walk through it together during the third week of Analytical Laboratory.\nAbout two hours should be allocated to this lesson, in the context of a three-hour period in which the first hour is spent counting pennies.\n\nThis lesson was not piloted in Spring 2025 and therefore is still in the beta testing phase.\nInstructors may wish to tailor the lesson to highlight specific content learning objectives for statistical analysis.\n",
+    "programming_skill": "None",
+    "primary_course": "Foundational Module",
+    "also_for": [
+      "Statistics",
+      "Statistical Mechanics"
+    ],
+    "authors": [
+      "Dr. Christine Morales"
+    ],
+    "estimated_time": "2 hours",
+    "format": "Single Notebook",
+    "instructor_email": "moralech@mountunion.edu",
+    "student_level": "Undergraduate - Second Year",
+    "students_piloted": 0,
+    "instructor_notes": "This introductory module should work well as a third programming lesson for students with no prior coding experience.\n\nTeaching tips:\n- Students are learning for the first time here how to import data from CSV files.  \n- Several types of data and coding structures are introduced here for the first time, so introductory text may be worthwhile for students to read.\n- Using an Excel template to organize data into properly formatted CSV files with matching column headers is critical.\n- (Not included) In Task 2, the Python code here does NOT automatically generate tables of data organized by year for students\n  to print out and tape into their lab notebooks.  If you feel this is useful, the two print statements can be modified to do so.\n- In Task 5, students are asked to copy/paste/modify code for a graph of brass penny data to make a graph for zinc penny data.\n  If time is tight, you may wish to provide students with hints and/or the sample-code for the zinc penny graph.\n- Students should work together in groups to ensure they are accountable to understand each part.\n- Encourage students to share ideas but code/answer questions in their own copy of the notebook.\n- Remind students to save their own copy before they begin work.\n- Some students may have several Google accounts; remind them to be aware of which account is logged in when they save.\n- Keeping an eye on the time may be helpful to ensure students are progressing at a reasonable pace.\n\nTiming notes:\n- Although this has not yet been piloted, it was based on a corresponding activity using Excel that typically took 2 hours.\n- Task 1 is anticipated to take students 20-25 minutes (including the work of creating/uploading properly formatted CSV files)\n- Task 2 is anticipated to take students 10-15 minutes.  \n- Task 3 is *anticipated* to take students 10-20 minutes. If outliers are found and decisions are made to clean data, it may take up to 25 minutes.\n- Task 4 is *anticipated* to take students 15-20 minutes if they already know how a Student's T test works.\n  It may be helpful to stop here and add in a 5-minute mini-lecture about Student's T tests, null hypothesis, etc. so everyone is on the same page.\n- Task 5 is anticipated to take students 10-15 minutes.  If time is tight, you may wish to provide hints and/or sample-code to assist, or else skip the second graph.\n  Also, please remind students of how to save and print the graphs to tape into their lab notebook.\n- Task 6 is *anticipated* to take students 15-20 minutes if they do the code commenting and as instructed.  \n  If time is tight, you may wish to advise students to run the code without comments, and work together on answering questions.\n  Also, please remind students to save and print the graphs to tape into their lab notebook.\n\nCommon student questions:\n- Students may ask if they need to tape the graph into their laboratory notebook before turning it in.\n- Students may ask if the output from Part 2 is sufficient for the data tables that they should print out.\n  If you want the output to include all grouped data, you will need to modify the two print statements in Part 2 accordingly.\n",
+    "related_modules": [
+      "moralech-umu-basic-tasks",
+      "calibration-of-glassware",
+      "solution-preparation-spectrophotometry",
+      "standard-addition-spectophotometry",
+      "ocean-acidification",
+      "buffer-solutions",
+      "hplc-analysis",
+      "gc-ms-internal-standard"
+    ],
+    "public_repo_url": "https://github.com/act-cms/statistical-testing-beta",
+    "materials": [
+      {
+        "title": "Part 1: Introduction",
+        "description": "This Jupyter notebook can be used to generate code in Python to perform six tasks for statistical analysis: Upload multiple datasets from CSV files; Reorganize and summarize data; Recognize and address outliers; Apply Student's T test; Perform linear least-squares with propagation of uncertainty; Build and plot histograms ",
+        "type": "notebook",
+        "duration": "2 hours",
+        "github_url": "https://github.com/act-cms/statistical-testing-beta/blob/main/Statistical_Testing_Student_Version.ipynb",
+        "colab_url": "https://colab.research.google.com/github/act-cms/statistical-testing-beta/blob/main/Statistical_Testing_Student_Version.ipynb",
+        "objectives": [
+          "Content: Define and use statistical concepts that model the effects of random error on a data set",
+          "Content: Use careful documentation and/or the statistical Grubbs Test to decide when a data point can be discarded",
+          "Content: Apply the Student T test to accept or reject a null hypothesis under several different sets of conditions",
+          "Process: Use Python code to transform data using structures such as arrays",
+          "Process: Use Python code to visualize data using different types of graphs",
+          "Process: Work in teams to manage and share data, and document and share causes of outlier data",
+          "Process: Work in teams to evaluate outcomes of statistical tests"
+        ]
+      }
+    ],
+    "scientific_objectives": [
+      "Define and use statistical concepts that model the effects of random error on a data set",
+      "Use careful documentation and/or the statistical Grubbs Test to decide when a data point can be discardeds",
+      "Apply the Student T test to accept or reject a null hypothesis under several different sets of conditions"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Use Python code to transform data using structures such as arrays",
+      "Use Python code to visualize data using different types of graphs",
+      "Work in teams to manage and share data, and document and share causes of outlier data",
+      "Work in teams to evaluate outcomes of statistical tests"
+    ],
+    "scientific_prerequisites": [
+      "Basic statistical definitions including mean and standard deviation"
+    ],
+    "programming_prerequisites": [
+      "No prior programming experience required"
+    ],
+    "platforms": [
+      "Google Colab",
+      "Local Installation",
+      "ChemCompute"
+    ],
+    "recommended_platform": "Google Colab",
+    "tags": [
+      "python",
+      "analytical-chemistry",
+      "laboratory",
+      "data-analysis"
+    ],
+    "id": "statistical-testing-beta",
+    "instructor_repo": "act-cms/instructor-materials",
+    "instructor_repo_path": "statistical-testing-beta"
   }
 ]
