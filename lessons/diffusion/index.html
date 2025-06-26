@@ -45,16 +45,16 @@
                         <a href="#cyberinfrastructure-objectives" class="toc-sublink">Cyberinfrastructure Objectives</a>
                     </div>
                     <a href="#prerequisites" class="toc-link">Prerequisites</a>
-                    
-                    <a href="#instructor-notes" class="toc-link">Instructor Notes</a>
-                    
-                    
                     <a href="#course-materials" class="toc-link">Course Materials</a>
                     <div class="toc-submenu">
                         
                         <a href="#material-1" class="toc-sublink">Diffusion Computational Lab</a>
                         
                     </div>
+                    
+                    <a href="#instructor-notes" class="toc-link">Instructor Notes</a>
+                    
+                    
                     <a href="#platform-requirements" class="toc-link">Platform Requirements</a>
                 </nav>
             </aside>
@@ -198,17 +198,6 @@ the experimental and computational paradigms.</p>
                     </div>
                 </div>
 
-                
-                <div class="content-section" id="instructor-notes">
-                    <h2>Instructor Notes</h2>
-                    <div class="instructor-notes">
-                        <div>Additional context for instructors using this lesson:</p><p>This activity is designed as a lab activity to expose students to some techniques and capabilities of<br>computational materials science with no programming prerequisites. That is, all they have to do with this<br>Jupyter notebook is run existing cells of code and in some cases paste in data or change one number. My goals<br>were to get the students thinking about how computation as a paradigm is distinct from pure theory and can <br>complement both theory and experiment, e.g. by probing scales of length and time inaccessible in a physical<br>lab, or through massive replication through automation.</p><p>When I piloted this activity (in Carnegie Mellon's introductory materials science course), it was <br>actually before they had seen anything about diffusion in the associated lecture. I think it could work well<br>in either scenario, though, it would just affect how technical one should expect the students to get in their<br>responses to the reflection prompts, and also what context would be needed in the prelab mini-lecture. My pilot<br>audience was also extremely heterogeneous in programming background, some first-year undergraduates with <br>essentially no experience, and some more senior computer science students, and it worked just fine.</p><p>For my course, the deliverable was a standard lab memo that included responses to the reflection prompts within<br>the notebook, as well as this additional prompt: "Please also write at least a few sentences reflecting on <br>computation as an "experimental" paradigm generally. How do you see it as similar to or different from <br>experiments? What can we learn about diffusion more easily from one approach compared to the other?"</p><p>Logistical tips, and things to emphasize in prelab mini-lecture:<br>• Demonstrate launching the notebook in chosen platform (I suggest ChemCompute), including setting the correct runtime!<br>• Demonstrate using the online MD tool and getting the density up high enough (easiest technique is to use the "freeze" button and then drag the number slider up repeatedly)<br>• Since the first two setup cells to install and import packages will take a few minutes to run, try to make sure students get those going first and then start reading and exploring the MD engine, etc.</p><p>Some student "gotchas" I ran into a few times:<br>• Not setting the correct runtime (e.g. they're in Python instead of Julia) so none of the code runs<br>• Not evaluating the cells after pasting their data in<br>• Data formatting issues due to either not pasting in the full contents of the data dump, resetting stats during data collection, etc.</p><p>Possibilities to "level up" this activity for more advanced students:<br>• Connect to 2D Lennard-Jones phase diagram (conditions here are in the two-phase solid-liquid region!) and thinking about why solid ends up in middle of box and liquid along the edges (see e.g. https://www.researchgate.net/publication/49750821/figure/fig1/AS:667216336936969@1536088179352/Phase-diagram-of-2D-Lennard-Jones-solid-as-given-in-9-The-first-order-boundaries-are.png) <br>• "Skeletonize" some of the code cells and ask students to fill in some of the analysis or visualization themselves<br>• Get more in-depth into what's going on with the MD, understand why temperature drifts, etc.<br>• Have them repeat the second portion at another temperature and think about how/why the results change<br>• Dive more into some of the PDE stuff at the end<br></div>
-                    </div>
-                </div>
-                
-
-                
-
                 <div class="content-section" id="course-materials">
                     <h2>Course Materials</h2>
                     
@@ -228,10 +217,10 @@ the experimental and computational paradigms.</p>
                                 
                                 <div class="notebook-buttons">
                                     
-                                    <a href="https://colab.research.google.com/github/rkurchin/27100_diffusion_computational_lab/blob/main/colab/diffusion_computational_lab_colab.ipynb" class="btn btn-primary">Open in Colab</a>
+                                    <a href="https://colab.research.google.com/github/rkurchin/27100_diffusion_computational_lab/blob/main/colab/diffusion_computational_lab_colab.ipynb" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open in Colab</a>
                                     
                                     
-                                    <a href="https://github.com/rkurchin/27100_diffusion_computational_lab/blob/main/diffusion_computational_lab.ipynb" class="btn btn-secondary">View Notebook</a>
+                                    <a href="https://github.com/rkurchin/27100_diffusion_computational_lab/blob/main/diffusion_computational_lab.ipynb" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Notebook</a>
                                     
                                 </div>
                                 
@@ -259,7 +248,7 @@ the experimental and computational paradigms.</p>
                         <div class="material-card">
                             <h4>Complete Student Materials</h4>
                             <p>Download or clone the complete repository with all notebooks, datasets, and supporting files.</p>
-                            <a href="https://github.com/rkurchin/27100_diffusion_computational_lab" class="btn btn-primary">
+                            <a href="https://github.com/rkurchin/27100_diffusion_computational_lab" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                                 View Repository
                             </a>
                         </div>
@@ -270,7 +259,7 @@ the experimental and computational paradigms.</p>
                         <div class="material-card">
                             <h4>Complete Instructor Package</h4>
                             <p>Solutions for all notebooks, teaching notes, assessment rubrics, and additional examples.</p>
-                            <a href="https://github.com/act-cms/instructor-materials/tree/main/diffusion" class="btn btn-secondary">
+                            <a href="https://github.com/act-cms/instructor-materials/tree/main/diffusion" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                                 Instructor Resources
                             </a>
                             <p class="access-note">
@@ -281,6 +270,17 @@ the experimental and computational paradigms.</p>
                         </div>
                     </div>
                 </div>
+
+                
+                <div class="content-section" id="instructor-notes">
+                    <h2>Instructor Notes</h2>
+                    <div class="instructor-notes">
+                        <div>Additional context for instructors using this lesson:</p><p>This activity is designed as a lab activity to expose students to some techniques and capabilities of<br>computational materials science with no programming prerequisites. That is, all they have to do with this<br>Jupyter notebook is run existing cells of code and in some cases paste in data or change one number. My goals<br>were to get the students thinking about how computation as a paradigm is distinct from pure theory and can <br>complement both theory and experiment, e.g. by probing scales of length and time inaccessible in a physical<br>lab, or through massive replication through automation.</p><p>When I piloted this activity (in Carnegie Mellon's introductory materials science course), it was <br>actually before they had seen anything about diffusion in the associated lecture. I think it could work well<br>in either scenario, though, it would just affect how technical one should expect the students to get in their<br>responses to the reflection prompts, and also what context would be needed in the prelab mini-lecture. My pilot<br>audience was also extremely heterogeneous in programming background, some first-year undergraduates with <br>essentially no experience, and some more senior computer science students, and it worked just fine.</p><p>For my course, the deliverable was a standard lab memo that included responses to the reflection prompts within<br>the notebook, as well as this additional prompt: "Please also write at least a few sentences reflecting on <br>computation as an "experimental" paradigm generally. How do you see it as similar to or different from <br>experiments? What can we learn about diffusion more easily from one approach compared to the other?"</p><p>Logistical tips, and things to emphasize in prelab mini-lecture:<br>• Demonstrate launching the notebook in chosen platform (I suggest ChemCompute), including setting the correct runtime!<br>• Demonstrate using the online MD tool and getting the density up high enough (easiest technique is to use the "freeze" button and then drag the number slider up repeatedly)<br>• Since the first two setup cells to install and import packages will take a few minutes to run, try to make sure students get those going first and then start reading and exploring the MD engine, etc.</p><p>Some student "gotchas" I ran into a few times:<br>• Not setting the correct runtime (e.g. they're in Python instead of Julia) so none of the code runs<br>• Not evaluating the cells after pasting their data in<br>• Data formatting issues due to either not pasting in the full contents of the data dump, resetting stats during data collection, etc.</p><p>Possibilities to "level up" this activity for more advanced students:<br>• Connect to 2D Lennard-Jones phase diagram (conditions here are in the two-phase solid-liquid region!) and thinking about why solid ends up in middle of box and liquid along the edges (see e.g. https://www.researchgate.net/publication/49750821/figure/fig1/AS:667216336936969@1536088179352/Phase-diagram-of-2D-Lennard-Jones-solid-as-given-in-9-The-first-order-boundaries-are.png) <br>• "Skeletonize" some of the code cells and ask students to fill in some of the analysis or visualization themselves<br>• Get more in-depth into what's going on with the MD, understand why temperature drifts, etc.<br>• Have them repeat the second portion at another temperature and think about how/why the results change<br>• Dive more into some of the PDE stuff at the end<br></div>
+                    </div>
+                </div>
+                
+
+                
 
                 <div class="content-section" id="platform-requirements">
                     <h2>Platform Requirements</h2>
@@ -293,7 +293,7 @@ the experimental and computational paradigms.</p>
                             <h4>ChemCompute (Recommended)</h4>
 <p>This module is compatible with ChemCompute - a specialized platform for computational chemistry education.</p>
 <ul>
-    <li>Access through your institution</li>
+    <li>Access using your institution account</li>
     <li>Pre-configured chemistry software environment</li>
     <li>No personal setup required</li>
     <li>Includes computational molecular science packages (Psi4, OpenMM)</li>
