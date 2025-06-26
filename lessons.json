@@ -292,7 +292,7 @@
     "description": "Students are introduced to the use of Python to perform cheminformatics, \nanalyze NMR data and generate visualizations for data.\n",
     "expanded_description": "Four notebooks cover applications chemistry graduate students might need to utilize Python for routine\nanalysis of chemical structures using rdkit, processing NMR data for reaction kinetics and nuclear\nspin relaxation data, and to plot data/results. Applicable for organic, inorganic and polymer chemists \nwith little to no programming experience. Students will leave with the ability to load their own data, \nutilize published Python packages and create plots of the resultant information/data.\n\nThe material was introduced along with general NMR lectures covering introduction to NMR Physics, chemical shifts, \nspin-spin coupling, relaxation mechanisms, 1D and 2D pulse sequences and processing NMR data. Students are encouraged \nto work in teams for various questions posed in class as well as structural assignment problems. \n  \n",
     "programming_skill": "None",
-    "primary_course": "Foundational Module",
+    "primary_course": "Advanced Organic Chemistry",
     "also_for": [
       "Organic Chemistry",
       "Inorganic Science",
@@ -308,9 +308,6 @@
     "student_level": "Mixed Graduate/Undergraduate",
     "students_piloted": 25,
     "instructor_notes": "Additional context for instructors using this lesson:\n\n- This lesson works well when paired with instruction on NMR Spectroscopy for synthetic chemists\n- Take extra time with the first two notebooks for students new to Python programming\n- Homework is designed to show evidence students have gone through the notebooks (not to test skill development)\n\nTiming notes:\n- Part 1 (Day 0 , Python Essentials) is relatively quick and can be covered in a few minutes at the beginning of the course\n- Other parts are covered during a 45 minute class period, one per week\n- Advanced students are encouraged to work with people new to programming\n\nCommon student questions:\n- \"Why do we need Python for NMR?\"\n- \"I don't know what some of these error messages mean or how to address them.\"\n",
-    "related_modules": [
-      "computational-chemistry-basics"
-    ],
     "public_repo_url": "https://github.com/act-cms/python-for-nmr",
     "materials": [
       {
