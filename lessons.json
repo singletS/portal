@@ -139,6 +139,88 @@
     "instructor_repo_path": "molecular-representations"
   },
   {
+    "title": "Building a Data Analysis Pipeline: The Kinetics of the Chemiluminescence of Bleach",
+    "description": "Students will learn to to automate the fitting of a set of datafiles.",
+    "expanded_description": "This module is a pair of notebooks designed to teach students how to batch process a set of experimental datafiles, rather than working with each file individually. Students are first taken through fitting one file with an eye towards automation. In the second notebook, two automation options are described. The first, 'soft' automation, simply gives an organization to fitting a moderate number of files by hand. The second teaches students to use glob to find all files of a given type and then use a for loop to fit all files.\n\nThe provided datafiles show the chemiluminescence of bleach when reacted with luminol and peroxide. These files show a sharp rise from the initial reaction, then an exponential decay that has different rates depending on the concentration of the reactants. These notebooks are easily adapted to any set of experimental data showing an exponential decay, common in many kinetics experiments.\n",
+    "programming_skill": "Beginner",
+    "primary_course": "Physical Chemistry Lab",
+    "also_for": [
+      "Physical Chemistry",
+      "Analytical Chemistry Lab",
+      "Analytical Chemistry"
+    ],
+    "authors": [
+      "Prof. Marie van Staveren"
+    ],
+    "estimated_time": "2-3 hours",
+    "format": "Multi-Part Materials Module",
+    "instructor_email": "instructor-access@university.edu",
+    "student_level": "Undergraduate - Third Year",
+    "students_piloted": 3,
+    "instructor_notes": "Additional context for instructors using this lesson:\n\n- These notebooks are intended to support students in analyzing their experimental data\n- The piloted assessment was a separate lab report, so there is no formal assessment within this module\n- Students typically don't complete every step in order. Instead they work at what they need help with.\n- Students often struggle with how close initial parameter guesses need to be\n\nTiming notes:\n- Part 1 typically takes students 30 - 45 minutes\n- Part 2 takes between 1 and 2 hours\n",
+    "related_modules": [
+      "vibronic-spectrum-iodine"
+    ],
+    "public_repo_url": "https://github.com/act-cms/chemiluminescence-of-bleach",
+    "materials": [
+      {
+        "title": "Part 1: Fitting the first data file",
+        "description": "Fitting a single data file with an eye towards automation",
+        "type": "notebook",
+        "duration": "30 minutes",
+        "github_url": "https://github.com/act-cms/chemiluminescence-of-bleach/blob/main/Fitting-the-first-data-file.ipynb",
+        "objectives": [
+          "Fitting data to an exponential",
+          "Automatically determining initial guess parameters"
+        ]
+      },
+      {
+        "title": "Part 2: Fitting many data files",
+        "description": "Creating a pipeline to automatically fit many data files",
+        "type": "notebook",
+        "duration": "90 min",
+        "github_url": "https://github.com/act-cms/chemiluminescence-of-bleach/blob/main/Fitting-many-data-files.ipynb",
+        "objectives": [
+          "Using glob to find files",
+          "Using a for loop to iterate over files",
+          "Handling likely issues with automation"
+        ]
+      }
+    ],
+    "scientific_objectives": [
+      "Understanding how to handle metadata from instrumental outputs",
+      "The possibilities of automation to allow more complex experimental analysis"
+    ],
+    "cyberinfrastructure_objectives": [
+      "Fit data using Scipy's curve_fit",
+      "Using glob to search for files",
+      "Using a for loop to automate file analysis",
+      "Planning for likely problems with automatic analysis"
+    ],
+    "scientific_prerequisites": [
+      "General chemistry",
+      "Introductory level understanding of chemical kinetics"
+    ],
+    "programming_prerequisites": [
+      "Basic Python syntax (variables, loops, functions)"
+    ],
+    "platforms": [
+      "Local Installation",
+      "ChemCompute"
+    ],
+    "recommended_platform": "ChemCompute",
+    "tags": [
+      "python",
+      "kinetics",
+      "data fitting",
+      "automation",
+      "lab"
+    ],
+    "id": "chemiluminescence-of-bleach",
+    "instructor_repo": "act-cms/instructor-materials",
+    "instructor_repo_path": "chemiluminescence-of-bleach"
+  },
+  {
     "title": "Diffusion from the Atomistic to Continuum Scale",
     "description": "Explore ways to measure and model diffusion computationally, starting with molecular dynamics in a web app and then moving to a Fickian continuum description.",
     "expanded_description": "Explore diffusion at multiple lengthscales, no coding experience required! \nStudents will start by collecting their \"experimental\" data using a 2D molecular dynamics (MD) web app and \nby stepping through this notebook, will see how one can extract a diffusivity from mean squared displacement\nacross particles. \n\nNext, they will connect this to the continuum (Fick's Laws) description and investigate how the intuitive notion\nof diffusion (how material \"spreads out\") connects to the atomistic picture from Brownian motion.\n\nAlong the way, there are prompts to reflect on both the conceptual content as well as the complementarity between\nthe experimental and computational paradigms.\n",
