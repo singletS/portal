@@ -95,17 +95,17 @@ materials:
       - predict the effect of structure on the entropy of a substance
   
   # Add more materials as needed
-   - title: "Part 2: Calculating entropy with phase changes"
-     description: "Calculating the molar entropy of a substance over a temperature range that spans phase changes"
-     type: "notebook"
-     duration: "2.5 hrs"
-     github_url: "https://github.com/act-cms/your-lesson-repo/blob/main/calculating-multiphase-entropyorg.ipynb"
-     colab_url: ""https://colab.research.google.com/github/act-cms/calculating-entropies/blob/main/02-entropy-multi-phase/calculating-multiphase-entropyorg.ipynb"
-     objectives:
-       - "Application of concepts from Part 1"
-       - "Apply the third law of thermodynamics to calculate entropy of a substance over a temperature range"
-       - "Calculate S for warming a substance in different phases"
-       - "Calculate S for phase transitions"
+  - title: "Part 2: Calculating entropy with phase changes"
+    description: "Calculating the molar entropy of a substance over a temperature range that spans phase changes"
+    type: "notebook"
+    duration: "2.5 hrs"
+    github_url: "https://github.com/act-cms/your-lesson-repo/blob/main/calculating-multiphase-entropyorg.ipynb"
+    colab_url: "https://colab.research.google.com/github/act-cms/calculating-entropies/blob/main/02-entropy-multi-phase/calculating-multiphase-entropyorg.ipynb"
+    objectives:
+     - "Application of concepts from Part 1"
+     - "Apply the third law of thermodynamics to calculate entropy of a substance over a temperature range"
+     - "Calculate S for warming a substance in different phases"
+     - "Calculate S for phase transitions"
 
 # LEARNING OBJECTIVES (REQUIRED)
 # What molecular science concepts will students learn?
